@@ -1,2 +1,122 @@
 2025-01-30 05:35:57.583 [info] Using repo backend url https://repo42.cursor.sh
 2025-01-30 05:35:57.872 [info] Git graph is disabled. shouldIndex: true isEnabled: false
+2025-01-30 05:51:23.203 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:51:23.499 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:51:23.499 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:51:26.255 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:51:26.255 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:51:31.143 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:51:31.143 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:51:31.696 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:51:31.696 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:51:32.391 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:51:32.391 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:51:33.112 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:51:33.112 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:51:45.316 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:51:45.317 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:51:46.070 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:51:46.070 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:51:48.827 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:51:48.827 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:51:51.849 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:51:51.849 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:51:57.582 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:51:57.582 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:51:59.685 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:51:59.685 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:01.206 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:01.206 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:02.873 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:02.873 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:03.913 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:03.913 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:05.155 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:05.155 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:05.871 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:05.871 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:06.947 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:06.947 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:08.282 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:08.282 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:09.365 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:09.365 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:09.994 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:09.994 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:10.413 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:10.413 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:11.683 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:11.683 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:12.770 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:12.770 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:13.565 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:13.565 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:13.988 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:13.988 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:19.429 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:19.429 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:22.745 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:22.745 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:24.560 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:24.560 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:26.594 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:26.594 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:28.715 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:52:28.715 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:54:09.965 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:54:09.966 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:54:12.643 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:54:12.643 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:54:13.222 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:54:13.222 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:54:14.210 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:54:14.210 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:54:15.952 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:54:15.953 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:54:16.403 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:54:16.403 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:54:16.786 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:54:16.786 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:54:20.019 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:54:20.020 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:54:20.479 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:54:20.479 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:57:02.855 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:57:02.855 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:57:03.117 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:57:03.118 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:00:57.571 [error] Failed to check if git graph is enabled [internal] Stream closed with error code NGHTTP2_REFUSED_STREAM
+2025-01-30 06:19:01.302 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:19:01.595 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:19:01.595 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:19:03.341 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:19:03.341 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:19:07.668 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:19:07.669 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:19:22.470 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:19:22.470 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:19:24.831 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:19:24.831 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:19:26.827 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:19:26.827 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:19:27.247 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:19:27.247 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:20:09.927 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:20:09.927 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:25:57.572 [error] Failed to check if git graph is enabled [internal] Stream closed with error code NGHTTP2_REFUSED_STREAM
+2025-01-30 06:38:36.200 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:38:37.522 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:38:37.522 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:38:38.212 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:38:38.212 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:38:40.975 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:38:40.976 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:38:44.782 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:38:44.782 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:38:45.997 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:38:45.997 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:38:47.616 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:38:47.616 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:38:48.211 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:38:48.211 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 06:40:57.565 [error] Failed to check if git graph is enabled [internal] Stream closed with error code NGHTTP2_REFUSED_STREAM

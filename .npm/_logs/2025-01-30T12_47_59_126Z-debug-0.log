@@ -1,0 +1,966 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@10.8.2
+2 info using node@v18.20.6
+3 silly config load:file:/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/home/iskender.cevik/chatbot-project/frontend/.npmrc
+5 silly config load:file:/home/iskender.cevik/.npmrc
+6 silly config load:file:/usr/etc/npmrc
+7 verbose title npm install terser
+8 verbose argv "install" "terser"
+9 verbose logfile logs-max:10 dir:/home/iskender.cevik/.npm/_logs/2025-01-30T12_47_59_126Z-
+10 verbose logfile /home/iskender.cevik/.npm/_logs/2025-01-30T12_47_59_126Z-debug-0.log
+11 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+12 silly logfile start cleaning logs, removing 1 files
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly fetch manifest terser@*
+16 silly packumentCache full:https://registry.npmjs.org/terser cache-miss
+17 http fetch GET 200 https://registry.npmjs.org/terser 341ms (cache updated)
+18 silly packumentCache full:https://registry.npmjs.org/terser set size:undefined disposed:false
+19 silly placeDep ROOT terser@5.37.0 OK for: frontend@0.0.0 want: *
+20 silly fetch manifest @jridgewell/source-map@^0.3.3
+21 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2fsource-map cache-miss
+22 http fetch GET 200 https://registry.npmjs.org/@jridgewell%2fsource-map 49ms (cache miss)
+23 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2fsource-map set size:undefined disposed:false
+24 silly fetch manifest commander@^2.20.0
+25 silly packumentCache full:https://registry.npmjs.org/commander cache-miss
+26 http fetch GET 200 https://registry.npmjs.org/commander 42ms (cache miss)
+27 silly packumentCache full:https://registry.npmjs.org/commander set size:undefined disposed:false
+28 silly fetch manifest source-map-support@~0.5.20
+29 silly packumentCache full:https://registry.npmjs.org/source-map-support cache-miss
+30 http fetch GET 200 https://registry.npmjs.org/source-map-support 38ms (cache miss)
+31 silly packumentCache full:https://registry.npmjs.org/source-map-support set size:undefined disposed:false
+32 silly placeDep ROOT @jridgewell/source-map@0.3.6 OK for: terser@5.37.0 want: ^0.3.3
+33 silly placeDep ROOT commander@2.20.3 OK for: terser@5.37.0 want: ^2.20.0
+34 silly placeDep ROOT source-map-support@0.5.21 OK for: terser@5.37.0 want: ~0.5.20
+35 silly fetch manifest buffer-from@^1.0.0
+36 silly packumentCache full:https://registry.npmjs.org/buffer-from cache-miss
+37 http fetch GET 200 https://registry.npmjs.org/buffer-from 35ms (cache miss)
+38 silly packumentCache full:https://registry.npmjs.org/buffer-from set size:undefined disposed:false
+39 silly fetch manifest source-map@^0.6.0
+40 silly packumentCache full:https://registry.npmjs.org/source-map cache-miss
+41 http fetch GET 200 https://registry.npmjs.org/source-map 43ms (cache updated)
+42 silly packumentCache full:https://registry.npmjs.org/source-map set size:undefined disposed:false
+43 silly placeDep ROOT buffer-from@1.1.2 OK for: source-map-support@0.5.21 want: ^1.0.0
+44 silly placeDep node_modules/source-map-support source-map@0.6.1 OK for: source-map-support@0.5.21 want: ^0.6.0
+45 silly reify mark retired [
+45 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@auth0/auth0-react'
+45 silly reify ]
+46 silly reify mark retired [
+46 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@auth0/auth0-spa-js'
+46 silly reify ]
+47 silly reify mark retired [
+47 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/analytics'
+47 silly reify ]
+48 silly reify mark retired [
+48 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/analytics-compat'
+48 silly reify ]
+49 silly reify mark retired [
+49 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/analytics-types'
+49 silly reify ]
+50 silly reify mark retired [
+50 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/app'
+50 silly reify ]
+51 silly reify mark retired [
+51 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/app-check'
+51 silly reify ]
+52 silly reify mark retired [
+52 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/app-check-compat'
+52 silly reify ]
+53 silly reify mark retired [
+53 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/app-check-interop-types'
+53 silly reify ]
+54 silly reify mark retired [
+54 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/app-check-types'
+54 silly reify ]
+55 silly reify mark retired [
+55 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/app-compat'
+55 silly reify ]
+56 silly reify mark retired [
+56 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/app-types'
+56 silly reify ]
+57 silly reify mark retired [
+57 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/auth'
+57 silly reify ]
+58 silly reify mark retired [
+58 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/auth-compat'
+58 silly reify ]
+59 silly reify mark retired [
+59 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/auth-interop-types'
+59 silly reify ]
+60 silly reify mark retired [
+60 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/auth-types'
+60 silly reify ]
+61 silly reify mark retired [
+61 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/component'
+61 silly reify ]
+62 silly reify mark retired [
+62 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/data-connect'
+62 silly reify ]
+63 silly reify mark retired [
+63 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/database'
+63 silly reify ]
+64 silly reify mark retired [
+64 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/database-compat'
+64 silly reify ]
+65 silly reify mark retired [
+65 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/database-types'
+65 silly reify ]
+66 silly reify mark retired [
+66 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/firestore'
+66 silly reify ]
+67 silly reify mark retired [
+67 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/firestore-compat'
+67 silly reify ]
+68 silly reify mark retired [
+68 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/firestore-types'
+68 silly reify ]
+69 silly reify mark retired [
+69 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/functions'
+69 silly reify ]
+70 silly reify mark retired [
+70 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/functions-compat'
+70 silly reify ]
+71 silly reify mark retired [
+71 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/functions-types'
+71 silly reify ]
+72 silly reify mark retired [
+72 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/installations'
+72 silly reify ]
+73 silly reify mark retired [
+73 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/installations-compat'
+73 silly reify ]
+74 silly reify mark retired [
+74 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/installations-types'
+74 silly reify ]
+75 silly reify mark retired [
+75 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/logger'
+75 silly reify ]
+76 silly reify mark retired [
+76 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/messaging'
+76 silly reify ]
+77 silly reify mark retired [
+77 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/messaging-compat'
+77 silly reify ]
+78 silly reify mark retired [
+78 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/messaging-interop-types'
+78 silly reify ]
+79 silly reify mark retired [
+79 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/performance'
+79 silly reify ]
+80 silly reify mark retired [
+80 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/performance-compat'
+80 silly reify ]
+81 silly reify mark retired [
+81 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/performance-types'
+81 silly reify ]
+82 silly reify mark retired [
+82 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/remote-config'
+82 silly reify ]
+83 silly reify mark retired [
+83 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/remote-config-compat'
+83 silly reify ]
+84 silly reify mark retired [
+84 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/remote-config-types'
+84 silly reify ]
+85 silly reify mark retired [
+85 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/storage'
+85 silly reify ]
+86 silly reify mark retired [
+86 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/storage-compat'
+86 silly reify ]
+87 silly reify mark retired [
+87 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/storage-types'
+87 silly reify ]
+88 silly reify mark retired [
+88 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/util'
+88 silly reify ]
+89 silly reify mark retired [
+89 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/vertexai'
+89 silly reify ]
+90 silly reify mark retired [
+90 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/webchannel-wrapper'
+90 silly reify ]
+91 silly reify mark retired [
+91 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@grpc/grpc-js'
+91 silly reify ]
+92 silly reify mark retired [
+92 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@grpc/proto-loader',
+92 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/.bin/proto-loader-gen-types'
+92 silly reify ]
+93 silly reify mark retired [
+93 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/aspromise'
+93 silly reify ]
+94 silly reify mark retired [
+94 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/base64'
+94 silly reify ]
+95 silly reify mark retired [
+95 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/codegen'
+95 silly reify ]
+96 silly reify mark retired [
+96 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/eventemitter'
+96 silly reify ]
+97 silly reify mark retired [
+97 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/fetch'
+97 silly reify ]
+98 silly reify mark retired [
+98 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/float'
+98 silly reify ]
+99 silly reify mark retired [
+99 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/inquire'
+99 silly reify ]
+100 silly reify mark retired [
+100 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/path'
+100 silly reify ]
+101 silly reify mark retired [
+101 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/pool'
+101 silly reify ]
+102 silly reify mark retired [
+102 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/utf8'
+102 silly reify ]
+103 silly reify mark retired [
+103 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/ansi-regex'
+103 silly reify ]
+104 silly reify mark retired [ '/home/iskender.cevik/chatbot-project/frontend/node_modules/cliui' ]
+105 silly reify mark retired [
+105 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/emoji-regex'
+105 silly reify ]
+106 silly reify mark retired [
+106 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/faye-websocket'
+106 silly reify ]
+107 silly reify mark retired [
+107 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/firebase'
+107 silly reify ]
+108 silly reify mark retired [
+108 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/get-caller-file'
+108 silly reify ]
+109 silly reify mark retired [
+109 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/http-parser-js'
+109 silly reify ]
+110 silly reify mark retired [ '/home/iskender.cevik/chatbot-project/frontend/node_modules/idb' ]
+111 silly reify mark retired [
+111 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/is-fullwidth-code-point'
+111 silly reify ]
+112 silly reify mark retired [
+112 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/lodash.camelcase'
+112 silly reify ]
+113 silly reify mark retired [ '/home/iskender.cevik/chatbot-project/frontend/node_modules/long' ]
+114 silly reify mark retired [
+114 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/protobufjs'
+114 silly reify ]
+115 silly reify mark retired [
+115 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/require-directory'
+115 silly reify ]
+116 silly reify mark retired [
+116 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/safe-buffer'
+116 silly reify ]
+117 silly reify mark retired [
+117 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/string-width'
+117 silly reify ]
+118 silly reify mark retired [
+118 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/strip-ansi'
+118 silly reify ]
+119 silly reify mark retired [ '/home/iskender.cevik/chatbot-project/frontend/node_modules/tslib' ]
+120 silly reify mark retired [
+120 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/websocket-driver'
+120 silly reify ]
+121 silly reify mark retired [
+121 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/websocket-extensions'
+121 silly reify ]
+122 silly reify mark retired [
+122 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/wrap-ansi'
+122 silly reify ]
+123 silly reify mark retired [ '/home/iskender.cevik/chatbot-project/frontend/node_modules/y18n' ]
+124 silly reify mark retired [ '/home/iskender.cevik/chatbot-project/frontend/node_modules/yargs' ]
+125 silly reify mark retired [
+125 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/yargs-parser'
+125 silly reify ]
+126 silly reify moves {
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@auth0/auth0-react': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@auth0/.auth0-react-8istvIyk',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@auth0/auth0-spa-js': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@auth0/.auth0-spa-js-2LoM7Bsy',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/analytics': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.analytics-3kgF6TSC',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/analytics-compat': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.analytics-compat-oQUTzIm0',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/analytics-types': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.analytics-types-73Pc7fb0',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/app': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.app-nGXLMsBD',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/app-check': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.app-check-pBuOdlKH',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/app-check-compat': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.app-check-compat-VZbJzBs2',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/app-check-interop-types': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.app-check-interop-types-MHdd9bhG',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/app-check-types': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.app-check-types-6ewqRi3D',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/app-compat': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.app-compat-HoPUaQN7',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/app-types': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.app-types-56zuM1TE',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/auth': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.auth-JzWuCV3f',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/auth-compat': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.auth-compat-XXo4W1AN',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/auth-interop-types': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.auth-interop-types-yUDBipAh',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/auth-types': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.auth-types-9f22nHVZ',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/component': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.component-aGA9gskf',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/data-connect': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.data-connect-K7KjCdQN',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/database': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.database-X8Ab9bAO',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/database-compat': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.database-compat-EAW1C3Xr',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/database-types': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.database-types-sMVr9Qz5',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/firestore': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.firestore-RrI6ziVP',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/firestore-compat': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.firestore-compat-LaM4OLpD',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/firestore-types': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.firestore-types-KK3cOmRw',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/functions': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.functions-pgITA4FK',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/functions-compat': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.functions-compat-4IhYcekz',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/functions-types': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.functions-types-20abxvNQ',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/installations': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.installations-D4cCLpyt',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/installations-compat': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.installations-compat-UqGNxfuX',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/installations-types': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.installations-types-xtqMyEZt',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/logger': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.logger-u6ZQjNDR',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/messaging': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.messaging-vcVfnE2e',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/messaging-compat': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.messaging-compat-GmLcsmnq',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/messaging-interop-types': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.messaging-interop-types-loWJCkO5',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/performance': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.performance-1v1RSVf9',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/performance-compat': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.performance-compat-FmaG29qT',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/performance-types': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.performance-types-DkcNkPwQ',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/remote-config': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.remote-config-kkd2lykf',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/remote-config-compat': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.remote-config-compat-qL1MC0AO',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/remote-config-types': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.remote-config-types-B1VzpMzM',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/storage': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.storage-M9VX3nK9',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/storage-compat': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.storage-compat-1V6J4aaE',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/storage-types': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.storage-types-GLHrWLGv',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/util': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.util-vgxjHNrB',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/vertexai': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.vertexai-rrYqpTV8',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/webchannel-wrapper': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@firebase/.webchannel-wrapper-tr2gmuSh',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@grpc/grpc-js': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@grpc/.grpc-js-Q5JQnxOj',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@grpc/proto-loader': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@grpc/.proto-loader-fde4gOti',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/.bin/proto-loader-gen-types': '/home/iskender.cevik/chatbot-project/frontend/node_modules/.bin/.proto-loader-gen-types-SvJe3pJw',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/aspromise': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/.aspromise-OcQHEsNx',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/base64': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/.base64-VuTg8Mhq',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/codegen': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/.codegen-5HkI6iAt',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/eventemitter': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/.eventemitter-CPblZ9lI',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/fetch': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/.fetch-L5Bq2x16',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/float': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/.float-R01zXzVk',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/inquire': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/.inquire-2GLsxFK2',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/path': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/.path-KGGz98zK',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/pool': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/.pool-Q8q4Gk95',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/utf8': '/home/iskender.cevik/chatbot-project/frontend/node_modules/@protobufjs/.utf8-cefZjhVj',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/ansi-regex': '/home/iskender.cevik/chatbot-project/frontend/node_modules/.ansi-regex-m7qddbpH',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/cliui': '/home/iskender.cevik/chatbot-project/frontend/node_modules/.cliui-zfkkCm4x',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/emoji-regex': '/home/iskender.cevik/chatbot-project/frontend/node_modules/.emoji-regex-emnBFbST',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/faye-websocket': '/home/iskender.cevik/chatbot-project/frontend/node_modules/.faye-websocket-jVXFmoiV',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/firebase': '/home/iskender.cevik/chatbot-project/frontend/node_modules/.firebase-lp4KvkB0',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/get-caller-file': '/home/iskender.cevik/chatbot-project/frontend/node_modules/.get-caller-file-fyXgtIZI',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/http-parser-js': '/home/iskender.cevik/chatbot-project/frontend/node_modules/.http-parser-js-TLu6nry0',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/idb': '/home/iskender.cevik/chatbot-project/frontend/node_modules/.idb-z5BDe6bq',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/is-fullwidth-code-point': '/home/iskender.cevik/chatbot-project/frontend/node_modules/.is-fullwidth-code-point-sF7doBsX',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/lodash.camelcase': '/home/iskender.cevik/chatbot-project/frontend/node_modules/.lodash.camelcase-qQrqk7Vh',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/long': '/home/iskender.cevik/chatbot-project/frontend/node_modules/.long-8tCsOi1g',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/protobufjs': '/home/iskender.cevik/chatbot-project/frontend/node_modules/.protobufjs-yFb6ySi6',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/require-directory': '/home/iskender.cevik/chatbot-project/frontend/node_modules/.require-directory-zuvBduor',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/safe-buffer': '/home/iskender.cevik/chatbot-project/frontend/node_modules/.safe-buffer-V7RL8RDE',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/string-width': '/home/iskender.cevik/chatbot-project/frontend/node_modules/.string-width-lQRyXfu1',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/strip-ansi': '/home/iskender.cevik/chatbot-project/frontend/node_modules/.strip-ansi-AejzVWY1',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/tslib': '/home/iskender.cevik/chatbot-project/frontend/node_modules/.tslib-6FyTBH8t',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/websocket-driver': '/home/iskender.cevik/chatbot-project/frontend/node_modules/.websocket-driver-doXrWo9N',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/websocket-extensions': '/home/iskender.cevik/chatbot-project/frontend/node_modules/.websocket-extensions-aBGtmEfu',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/wrap-ansi': '/home/iskender.cevik/chatbot-project/frontend/node_modules/.wrap-ansi-IkEWKBGU',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/y18n': '/home/iskender.cevik/chatbot-project/frontend/node_modules/.y18n-SF9zIaDV',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/yargs': '/home/iskender.cevik/chatbot-project/frontend/node_modules/.yargs-F4ixBf8u',
+126 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/yargs-parser': '/home/iskender.cevik/chatbot-project/frontend/node_modules/.yargs-parser-60UcALCe'
+126 silly reify }
+127 silly audit bulk request {
+127 silly audit   '@ampproject/remapping': [ '2.3.0' ],
+127 silly audit   '@babel/code-frame': [ '7.26.2' ],
+127 silly audit   '@babel/compat-data': [ '7.26.5' ],
+127 silly audit   '@babel/core': [ '7.26.7' ],
+127 silly audit   '@babel/generator': [ '7.26.5' ],
+127 silly audit   '@babel/helper-compilation-targets': [ '7.26.5' ],
+127 silly audit   '@babel/helper-module-imports': [ '7.25.9' ],
+127 silly audit   '@babel/helper-module-transforms': [ '7.26.0' ],
+127 silly audit   '@babel/helper-plugin-utils': [ '7.26.5' ],
+127 silly audit   '@babel/helper-string-parser': [ '7.25.9' ],
+127 silly audit   '@babel/helper-validator-identifier': [ '7.25.9' ],
+127 silly audit   '@babel/helper-validator-option': [ '7.25.9' ],
+127 silly audit   '@babel/helpers': [ '7.26.7' ],
+127 silly audit   '@babel/parser': [ '7.26.7' ],
+127 silly audit   '@babel/plugin-transform-react-jsx-self': [ '7.25.9' ],
+127 silly audit   '@babel/plugin-transform-react-jsx-source': [ '7.25.9' ],
+127 silly audit   '@babel/runtime': [ '7.26.7' ],
+127 silly audit   '@babel/template': [ '7.25.9' ],
+127 silly audit   '@babel/traverse': [ '7.26.7' ],
+127 silly audit   globals: [ '11.12.0', '14.0.0', '15.14.0' ],
+127 silly audit   '@babel/types': [ '7.26.7' ],
+127 silly audit   '@emotion/babel-plugin': [ '11.13.5' ],
+127 silly audit   'convert-source-map': [ '1.9.0', '2.0.0' ],
+127 silly audit   '@emotion/cache': [ '11.14.0' ],
+127 silly audit   '@emotion/hash': [ '0.9.2' ],
+127 silly audit   '@emotion/is-prop-valid': [ '1.3.1' ],
+127 silly audit   '@emotion/memoize': [ '0.9.0' ],
+127 silly audit   '@emotion/react': [ '11.14.0' ],
+127 silly audit   '@emotion/serialize': [ '1.3.3' ],
+127 silly audit   '@emotion/sheet': [ '1.4.0' ],
+127 silly audit   '@emotion/styled': [ '11.14.0' ],
+127 silly audit   '@emotion/unitless': [ '0.10.0' ],
+127 silly audit   '@emotion/use-insertion-effect-with-fallbacks': [ '1.2.0' ],
+127 silly audit   '@emotion/utils': [ '1.4.2' ],
+127 silly audit   '@emotion/weak-memoize': [ '0.4.0' ],
+127 silly audit   '@esbuild/aix-ppc64': [ '0.24.2' ],
+127 silly audit   '@esbuild/android-arm': [ '0.24.2' ],
+127 silly audit   '@esbuild/android-arm64': [ '0.24.2' ],
+127 silly audit   '@esbuild/android-x64': [ '0.24.2' ],
+127 silly audit   '@esbuild/darwin-arm64': [ '0.24.2' ],
+127 silly audit   '@esbuild/darwin-x64': [ '0.24.2' ],
+127 silly audit   '@esbuild/freebsd-arm64': [ '0.24.2' ],
+127 silly audit   '@esbuild/freebsd-x64': [ '0.24.2' ],
+127 silly audit   '@esbuild/linux-arm': [ '0.24.2' ],
+127 silly audit   '@esbuild/linux-arm64': [ '0.24.2' ],
+127 silly audit   '@esbuild/linux-ia32': [ '0.24.2' ],
+127 silly audit   '@esbuild/linux-loong64': [ '0.24.2' ],
+127 silly audit   '@esbuild/linux-mips64el': [ '0.24.2' ],
+127 silly audit   '@esbuild/linux-ppc64': [ '0.24.2' ],
+127 silly audit   '@esbuild/linux-riscv64': [ '0.24.2' ],
+127 silly audit   '@esbuild/linux-s390x': [ '0.24.2' ],
+127 silly audit   '@esbuild/linux-x64': [ '0.24.2' ],
+127 silly audit   '@esbuild/netbsd-arm64': [ '0.24.2' ],
+127 silly audit   '@esbuild/netbsd-x64': [ '0.24.2' ],
+127 silly audit   '@esbuild/openbsd-arm64': [ '0.24.2' ],
+127 silly audit   '@esbuild/openbsd-x64': [ '0.24.2' ],
+127 silly audit   '@esbuild/sunos-x64': [ '0.24.2' ],
+127 silly audit   '@esbuild/win32-arm64': [ '0.24.2' ],
+127 silly audit   '@esbuild/win32-ia32': [ '0.24.2' ],
+127 silly audit   '@esbuild/win32-x64': [ '0.24.2' ],
+127 silly audit   '@eslint-community/eslint-utils': [ '4.4.1' ],
+127 silly audit   'eslint-visitor-keys': [ '3.4.3', '4.2.0' ],
+127 silly audit   '@eslint-community/regexpp': [ '4.12.1' ],
+127 silly audit   '@eslint/config-array': [ '0.19.1' ],
+127 silly audit   '@eslint/core': [ '0.10.0' ],
+127 silly audit   '@eslint/eslintrc': [ '3.2.0' ],
+127 silly audit   '@eslint/js': [ '9.19.0' ],
+127 silly audit   '@eslint/object-schema': [ '2.1.5' ],
+127 silly audit   '@eslint/plugin-kit': [ '0.2.5' ],
+127 silly audit   '@humanfs/core': [ '0.19.1' ],
+127 silly audit   '@humanfs/node': [ '0.16.6' ],
+127 silly audit   '@humanwhocodes/retry': [ '0.3.1', '0.4.1' ],
+127 silly audit   '@humanwhocodes/module-importer': [ '1.0.1' ],
+127 silly audit   '@jridgewell/gen-mapping': [ '0.3.8' ],
+127 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+127 silly audit   '@jridgewell/set-array': [ '1.2.1' ],
+127 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.0' ],
+127 silly audit   '@jridgewell/trace-mapping': [ '0.3.25' ],
+127 silly audit   '@mui/core-downloads-tracker': [ '6.4.2' ],
+127 silly audit   '@mui/icons-material': [ '6.4.2' ],
+127 silly audit   '@mui/material': [ '6.4.2' ],
+127 silly audit   '@mui/private-theming': [ '6.4.2' ],
+127 silly audit   '@mui/styled-engine': [ '6.4.2' ],
+127 silly audit   '@mui/system': [ '6.4.2' ],
+127 silly audit   '@mui/types': [ '7.2.21' ],
+127 silly audit   '@mui/utils': [ '6.4.2' ],
+127 silly audit   '@nodelib/fs.scandir': [ '2.1.5' ],
+127 silly audit   '@nodelib/fs.stat': [ '2.0.5' ],
+127 silly audit   '@nodelib/fs.walk': [ '1.2.8' ],
+127 silly audit   '@popperjs/core': [ '2.11.8' ],
+127 silly audit   '@remix-run/router': [ '1.21.1' ],
+127 silly audit   '@rollup/rollup-android-arm-eabi': [ '4.32.1' ],
+127 silly audit   '@rollup/rollup-android-arm64': [ '4.32.1' ],
+127 silly audit   '@rollup/rollup-darwin-arm64': [ '4.32.1' ],
+127 silly audit   '@rollup/rollup-darwin-x64': [ '4.32.1' ],
+127 silly audit   '@rollup/rollup-freebsd-arm64': [ '4.32.1' ],
+127 silly audit   '@rollup/rollup-freebsd-x64': [ '4.32.1' ],
+127 silly audit   '@rollup/rollup-linux-arm-gnueabihf': [ '4.32.1' ],
+127 silly audit   '@rollup/rollup-linux-arm-musleabihf': [ '4.32.1' ],
+127 silly audit   '@rollup/rollup-linux-arm64-gnu': [ '4.32.1' ],
+127 silly audit   '@rollup/rollup-linux-arm64-musl': [ '4.32.1' ],
+127 silly audit   '@rollup/rollup-linux-loongarch64-gnu': [ '4.32.1' ],
+127 silly audit   '@rollup/rollup-linux-powerpc64le-gnu': [ '4.32.1' ],
+127 silly audit   '@rollup/rollup-linux-riscv64-gnu': [ '4.32.1' ],
+127 silly audit   '@rollup/rollup-linux-s390x-gnu': [ '4.32.1' ],
+127 silly audit   '@rollup/rollup-linux-x64-gnu': [ '4.32.1' ],
+127 silly audit   '@rollup/rollup-linux-x64-musl': [ '4.32.1' ],
+127 silly audit   '@rollup/rollup-win32-arm64-msvc': [ '4.32.1' ],
+127 silly audit   '@rollup/rollup-win32-ia32-msvc': [ '4.32.1' ],
+127 silly audit   '@rollup/rollup-win32-x64-msvc': [ '4.32.1' ],
+127 silly audit   '@types/babel__core': [ '7.20.5' ],
+127 silly audit   '@types/babel__generator': [ '7.6.8' ],
+127 silly audit   '@types/babel__template': [ '7.4.4' ],
+127 silly audit   '@types/babel__traverse': [ '7.20.6' ],
+127 silly audit   '@types/estree': [ '1.0.6' ],
+127 silly audit   '@types/json-schema': [ '7.0.15' ],
+127 silly audit   '@types/node': [ '22.12.0' ],
+127 silly audit   '@types/parse-json': [ '4.0.2' ],
+127 silly audit   '@types/prop-types': [ '15.7.14' ],
+127 silly audit   '@types/react': [ '18.3.18' ],
+127 silly audit   '@types/react-dom': [ '18.3.5' ],
+127 silly audit   '@types/react-transition-group': [ '4.4.12' ],
+127 silly audit   '@typescript-eslint/eslint-plugin': [ '8.22.0' ],
+127 silly audit   '@typescript-eslint/parser': [ '8.22.0' ],
+127 silly audit   '@typescript-eslint/scope-manager': [ '8.22.0' ],
+127 silly audit   '@typescript-eslint/type-utils': [ '8.22.0' ],
+127 silly audit   '@typescript-eslint/types': [ '8.22.0' ],
+127 silly audit   '@typescript-eslint/typescript-estree': [ '8.22.0' ],
+127 silly audit   'brace-expansion': [ '2.0.1', '1.1.11' ],
+127 silly audit   minimatch: [ '9.0.5', '3.1.2' ],
+127 silly audit   semver: [ '7.6.3', '6.3.1' ],
+127 silly audit   '@typescript-eslint/utils': [ '8.22.0' ],
+127 silly audit   '@typescript-eslint/visitor-keys': [ '8.22.0' ],
+127 silly audit   '@vitejs/plugin-react': [ '4.3.4' ],
+127 silly audit   acorn: [ '8.14.0' ],
+127 silly audit   'acorn-jsx': [ '5.3.2' ],
+127 silly audit   ajv: [ '6.12.6' ],
+127 silly audit   'ansi-styles': [ '4.3.0' ],
+127 silly audit   argparse: [ '2.0.1' ],
+127 silly audit   asynckit: [ '0.4.0' ],
+127 silly audit   axios: [ '1.7.9' ],
+127 silly audit   'babel-plugin-macros': [ '3.1.0' ],
+127 silly audit   'balanced-match': [ '1.0.2' ],
+127 silly audit   braces: [ '3.0.3' ],
+127 silly audit   browserslist: [ '4.24.4' ],
+127 silly audit   callsites: [ '3.1.0' ],
+127 silly audit   'caniuse-lite': [ '1.0.30001696' ],
+127 silly audit   chalk: [ '4.1.2' ],
+127 silly audit   clsx: [ '2.1.1' ],
+127 silly audit   'color-convert': [ '2.0.1' ],
+127 silly audit   'color-name': [ '1.1.4' ],
+127 silly audit   'combined-stream': [ '1.0.8' ],
+127 silly audit   'concat-map': [ '0.0.1' ],
+127 silly audit   cosmiconfig: [ '7.1.0' ],
+127 silly audit   yaml: [ '1.10.2', '2.7.0' ],
+127 silly audit   'cross-spawn': [ '7.0.6' ],
+127 silly audit   csstype: [ '3.1.3' ],
+127 silly audit   debug: [ '4.4.0' ],
+127 silly audit   'deep-is': [ '0.1.4' ],
+127 silly audit   'delayed-stream': [ '1.0.0' ],
+127 silly audit   'dom-helpers': [ '5.2.1' ],
+127 silly audit   'electron-to-chromium': [ '1.5.88' ],
+127 silly audit   'error-ex': [ '1.3.2' ],
+127 silly audit   esbuild: [ '0.24.2' ],
+127 silly audit   escalade: [ '3.2.0' ],
+127 silly audit   'escape-string-regexp': [ '4.0.0' ],
+127 silly audit   eslint: [ '9.19.0' ],
+127 silly audit   'eslint-plugin-react-hooks': [ '5.1.0' ],
+127 silly audit   'eslint-plugin-react-refresh': [ '0.4.18' ],
+127 silly audit   'eslint-scope': [ '8.2.0' ],
+127 silly audit   espree: [ '10.3.0' ],
+127 silly audit   esquery: [ '1.6.0' ],
+127 silly audit   esrecurse: [ '4.3.0' ],
+127 silly audit   estraverse: [ '5.3.0' ],
+127 silly audit   esutils: [ '2.0.3' ],
+127 silly audit   'fast-deep-equal': [ '3.1.3' ],
+127 silly audit   'fast-glob': [ '3.3.3' ],
+127 silly audit   'glob-parent': [ '5.1.2', '6.0.2' ],
+127 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+127 silly audit   'fast-levenshtein': [ '2.0.6' ],
+127 silly audit   fastq: [ '1.18.0' ],
+127 silly audit   'file-entry-cache': [ '8.0.0' ],
+127 silly audit   'fill-range': [ '7.1.1' ],
+127 silly audit   'find-root': [ '1.1.0' ],
+127 silly audit   'find-up': [ '5.0.0' ],
+127 silly audit   'flat-cache': [ '4.0.1' ],
+127 silly audit   flatted: [ '3.3.2' ],
+127 silly audit   'follow-redirects': [ '1.15.9' ],
+127 silly audit   'form-data': [ '4.0.1' ],
+127 silly audit   fsevents: [ '2.3.3' ],
+127 silly audit   'function-bind': [ '1.1.2' ],
+127 silly audit   gensync: [ '1.0.0-beta.2' ],
+127 silly audit   graphemer: [ '1.4.0' ],
+127 silly audit   'has-flag': [ '4.0.0' ],
+127 silly audit   hasown: [ '2.0.2' ],
+127 silly audit   'hoist-non-react-statics': [ '3.3.2' ],
+127 silly audit   'react-is': [ '16.13.1', '19.0.0' ],
+127 silly audit   ignore: [ '5.3.2' ],
+127 silly audit   'import-fresh': [ '3.3.0' ],
+127 silly audit   imurmurhash: [ '0.1.4' ],
+127 silly audit   'is-arrayish': [ '0.2.1' ],
+127 silly audit   'is-core-module': [ '2.16.1' ],
+127 silly audit   'is-extglob': [ '2.1.1' ],
+127 silly audit   'is-glob': [ '4.0.3' ],
+127 silly audit   'is-number': [ '7.0.0' ],
+127 silly audit   isexe: [ '2.0.0' ],
+127 silly audit   'js-tokens': [ '4.0.0' ],
+127 silly audit   'js-yaml': [ '4.1.0' ],
+127 silly audit   jsesc: [ '3.1.0' ],
+127 silly audit   'json-buffer': [ '3.0.1' ],
+127 silly audit   'json-parse-even-better-errors': [ '2.3.1' ],
+127 silly audit   'json-schema-traverse': [ '0.4.1' ],
+127 silly audit   'json-stable-stringify-without-jsonify': [ '1.0.1' ],
+127 silly audit   json5: [ '2.2.3' ],
+127 silly audit   keyv: [ '4.5.4' ],
+127 silly audit   levn: [ '0.4.1' ],
+127 silly audit   'lines-and-columns': [ '1.2.4' ],
+127 silly audit   'locate-path': [ '6.0.0' ],
+127 silly audit   'lodash.merge': [ '4.6.2' ],
+127 silly audit   'loose-envify': [ '1.4.0' ],
+127 silly audit   'lru-cache': [ '5.1.1' ],
+127 silly audit   merge2: [ '1.4.1' ],
+127 silly audit   micromatch: [ '4.0.8' ],
+127 silly audit   'mime-db': [ '1.52.0' ],
+127 silly audit   'mime-types': [ '2.1.35' ],
+127 silly audit   ms: [ '2.1.3' ],
+127 silly audit   nanoid: [ '3.3.8' ],
+127 silly audit   'natural-compare': [ '1.4.0' ],
+127 silly audit   'node-releases': [ '2.0.19' ],
+127 silly audit   'object-assign': [ '4.1.1' ],
+127 silly audit   optionator: [ '0.9.4' ],
+127 silly audit   'p-limit': [ '3.1.0' ],
+127 silly audit   'p-locate': [ '5.0.0' ],
+127 silly audit   'parent-module': [ '1.0.1' ],
+127 silly audit   'parse-json': [ '5.2.0' ],
+127 silly audit   'path-exists': [ '4.0.0' ],
+127 silly audit   'path-key': [ '3.1.1' ],
+127 silly audit   'path-parse': [ '1.0.7' ],
+127 silly audit   'path-type': [ '4.0.0' ],
+127 silly audit   picocolors: [ '1.1.1' ],
+127 silly audit   picomatch: [ '2.3.1' ],
+127 silly audit   postcss: [ '8.5.1' ],
+127 silly audit   'prelude-ls': [ '1.2.1' ],
+127 silly audit   'prop-types': [ '15.8.1' ],
+127 silly audit   'proxy-from-env': [ '1.1.0' ],
+127 silly audit   punycode: [ '2.3.1' ],
+127 silly audit   'queue-microtask': [ '1.2.3' ],
+127 silly audit   react: [ '18.3.1' ],
+127 silly audit   'react-dom': [ '18.3.1' ],
+127 silly audit   'react-refresh': [ '0.14.2' ],
+127 silly audit   'react-router': [ '6.28.2' ],
+127 silly audit   'react-router-dom': [ '6.28.2' ],
+127 silly audit   'react-transition-group': [ '4.4.5' ],
+127 silly audit   'regenerator-runtime': [ '0.14.1' ],
+127 silly audit   resolve: [ '1.22.10' ],
+127 silly audit   'resolve-from': [ '4.0.0' ],
+127 silly audit   reusify: [ '1.0.4' ],
+127 silly audit   rollup: [ '4.32.1' ],
+127 silly audit   'run-parallel': [ '1.2.0' ],
+127 silly audit   scheduler: [ '0.23.2' ],
+127 silly audit   'shebang-command': [ '2.0.0' ],
+127 silly audit   'shebang-regex': [ '3.0.0' ],
+127 silly audit   'source-map': [ '0.5.7', '0.6.1' ],
+127 silly audit   'source-map-js': [ '1.2.1' ],
+127 silly audit   'strip-json-comments': [ '3.1.1' ],
+127 silly audit   stylis: [ '4.2.0' ],
+127 silly audit   'supports-color': [ '7.2.0' ],
+127 silly audit   'supports-preserve-symlinks-flag': [ '1.0.0' ],
+127 silly audit   'to-regex-range': [ '5.0.1' ],
+127 silly audit   'ts-api-utils': [ '2.0.0' ],
+127 silly audit   'type-check': [ '0.4.0' ],
+127 silly audit   typescript: [ '5.6.3' ],
+127 silly audit   'typescript-eslint': [ '8.22.0' ],
+127 silly audit   'undici-types': [ '6.20.0' ],
+127 silly audit   'update-browserslist-db': [ '1.1.2' ],
+127 silly audit   'uri-js': [ '4.4.1' ],
+127 silly audit   vite: [ '6.0.11' ],
+127 silly audit   which: [ '2.0.2' ],
+127 silly audit   'word-wrap': [ '1.2.5' ],
+127 silly audit   yallist: [ '3.1.1' ],
+127 silly audit   'yocto-queue': [ '0.1.0' ],
+127 silly audit   terser: [ '5.37.0' ],
+127 silly audit   '@jridgewell/source-map': [ '0.3.6' ],
+127 silly audit   commander: [ '2.20.3' ],
+127 silly audit   'source-map-support': [ '0.5.21' ],
+127 silly audit   'buffer-from': [ '1.1.2' ]
+127 silly audit }
+128 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/fsevents
+129 silly reify mark deleted [
+129 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/fsevents'
+129 silly reify ]
+130 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-win32-x64-msvc
+131 silly reify mark deleted [
+131 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-win32-x64-msvc'
+131 silly reify ]
+132 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-win32-ia32-msvc
+133 silly reify mark deleted [
+133 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-win32-ia32-msvc'
+133 silly reify ]
+134 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-win32-arm64-msvc
+135 silly reify mark deleted [
+135 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-win32-arm64-msvc'
+135 silly reify ]
+136 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-linux-s390x-gnu
+137 silly reify mark deleted [
+137 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-linux-s390x-gnu'
+137 silly reify ]
+138 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-linux-riscv64-gnu
+139 silly reify mark deleted [
+139 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-linux-riscv64-gnu'
+139 silly reify ]
+140 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-linux-powerpc64le-gnu
+141 silly reify mark deleted [
+141 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-linux-powerpc64le-gnu'
+141 silly reify ]
+142 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-linux-loongarch64-gnu
+143 silly reify mark deleted [
+143 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-linux-loongarch64-gnu'
+143 silly reify ]
+144 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-linux-arm64-musl
+145 silly reify mark deleted [
+145 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-linux-arm64-musl'
+145 silly reify ]
+146 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-linux-arm64-gnu
+147 silly reify mark deleted [
+147 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-linux-arm64-gnu'
+147 silly reify ]
+148 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-linux-arm-musleabihf
+149 silly reify mark deleted [
+149 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-linux-arm-musleabihf'
+149 silly reify ]
+150 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-linux-arm-gnueabihf
+151 silly reify mark deleted [
+151 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-linux-arm-gnueabihf'
+151 silly reify ]
+152 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-freebsd-x64
+153 silly reify mark deleted [
+153 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-freebsd-x64'
+153 silly reify ]
+154 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-freebsd-arm64
+155 silly reify mark deleted [
+155 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-freebsd-arm64'
+155 silly reify ]
+156 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-darwin-x64
+157 silly reify mark deleted [
+157 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-darwin-x64'
+157 silly reify ]
+158 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-darwin-arm64
+159 silly reify mark deleted [
+159 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-darwin-arm64'
+159 silly reify ]
+160 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-android-arm64
+161 silly reify mark deleted [
+161 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-android-arm64'
+161 silly reify ]
+162 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-android-arm-eabi
+163 silly reify mark deleted [
+163 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@rollup/rollup-android-arm-eabi'
+163 silly reify ]
+164 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/win32-x64
+165 silly reify mark deleted [
+165 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/win32-x64'
+165 silly reify ]
+166 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/win32-ia32
+167 silly reify mark deleted [
+167 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/win32-ia32'
+167 silly reify ]
+168 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/win32-arm64
+169 silly reify mark deleted [
+169 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/win32-arm64'
+169 silly reify ]
+170 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/sunos-x64
+171 silly reify mark deleted [
+171 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/sunos-x64'
+171 silly reify ]
+172 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/openbsd-x64
+173 silly reify mark deleted [
+173 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/openbsd-x64'
+173 silly reify ]
+174 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/openbsd-arm64
+175 silly reify mark deleted [
+175 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/openbsd-arm64'
+175 silly reify ]
+176 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/netbsd-x64
+177 silly reify mark deleted [
+177 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/netbsd-x64'
+177 silly reify ]
+178 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/netbsd-arm64
+179 silly reify mark deleted [
+179 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/netbsd-arm64'
+179 silly reify ]
+180 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/linux-s390x
+181 silly reify mark deleted [
+181 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/linux-s390x'
+181 silly reify ]
+182 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/linux-riscv64
+183 silly reify mark deleted [
+183 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/linux-riscv64'
+183 silly reify ]
+184 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/linux-ppc64
+185 silly reify mark deleted [
+185 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/linux-ppc64'
+185 silly reify ]
+186 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/linux-mips64el
+187 silly reify mark deleted [
+187 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/linux-mips64el'
+187 silly reify ]
+188 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/linux-loong64
+189 silly reify mark deleted [
+189 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/linux-loong64'
+189 silly reify ]
+190 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/linux-ia32
+191 silly reify mark deleted [
+191 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/linux-ia32'
+191 silly reify ]
+192 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/linux-arm64
+193 silly reify mark deleted [
+193 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/linux-arm64'
+193 silly reify ]
+194 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/linux-arm
+195 silly reify mark deleted [
+195 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/linux-arm'
+195 silly reify ]
+196 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/freebsd-x64
+197 silly reify mark deleted [
+197 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/freebsd-x64'
+197 silly reify ]
+198 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/freebsd-arm64
+199 silly reify mark deleted [
+199 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/freebsd-arm64'
+199 silly reify ]
+200 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/darwin-x64
+201 silly reify mark deleted [
+201 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/darwin-x64'
+201 silly reify ]
+202 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/darwin-arm64
+203 silly reify mark deleted [
+203 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/darwin-arm64'
+203 silly reify ]
+204 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/android-x64
+205 silly reify mark deleted [
+205 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/android-x64'
+205 silly reify ]
+206 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/android-arm64
+207 silly reify mark deleted [
+207 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/android-arm64'
+207 silly reify ]
+208 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/android-arm
+209 silly reify mark deleted [
+209 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/android-arm'
+209 silly reify ]
+210 verbose reify failed optional dependency /home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/aix-ppc64
+211 silly reify mark deleted [
+211 silly reify   '/home/iskender.cevik/chatbot-project/frontend/node_modules/@esbuild/aix-ppc64'
+211 silly reify ]
+212 silly tarball no local data for buffer-from@https://registry.npmjs.org/buffer-from/-/buffer-from-1.1.2.tgz. Extracting by manifest.
+213 silly tarball no local data for source-map-support@https://registry.npmjs.org/source-map-support/-/source-map-support-0.5.21.tgz. Extracting by manifest.
+214 silly tarball no local data for commander@https://registry.npmjs.org/commander/-/commander-2.20.3.tgz. Extracting by manifest.
+215 silly tarball no local data for @jridgewell/source-map@https://registry.npmjs.org/@jridgewell/source-map/-/source-map-0.3.6.tgz. Extracting by manifest.
+216 silly tarball no local data for terser@https://registry.npmjs.org/terser/-/terser-5.37.0.tgz. Extracting by manifest.
+217 silly tarball no local data for source-map@https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz. Extracting by manifest.
+218 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 111ms
+219 silly audit report {}
+220 http fetch GET 200 https://registry.npmjs.org/buffer-from/-/buffer-from-1.1.2.tgz 187ms (cache miss)
+221 http fetch GET 200 https://registry.npmjs.org/commander/-/commander-2.20.3.tgz 231ms (cache miss)
+222 http fetch GET 200 https://registry.npmjs.org/source-map-support/-/source-map-support-0.5.21.tgz 236ms (cache miss)
+223 http fetch GET 200 https://registry.npmjs.org/@jridgewell/source-map/-/source-map-0.3.6.tgz 253ms (cache miss)
+224 http fetch GET 200 https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz 301ms (cache miss)
+225 http fetch GET 200 https://registry.npmjs.org/terser/-/terser-5.37.0.tgz 363ms (cache miss)
+226 silly ADD node_modules/buffer-from
+227 silly ADD node_modules/source-map-support
+228 silly ADD node_modules/source-map-support/node_modules/source-map
+229 silly ADD node_modules/commander
+230 silly ADD node_modules/@jridgewell/source-map
+231 silly ADD node_modules/terser
+232 silly ADD
+233 silly ADD
+234 silly ADD
+235 silly ADD
+236 silly ADD
+237 silly ADD
+238 silly ADD
+239 silly ADD
+240 silly ADD
+241 silly ADD
+242 silly ADD
+243 silly ADD
+244 silly ADD
+245 silly ADD
+246 silly ADD
+247 silly ADD
+248 silly ADD
+249 silly ADD
+250 silly ADD
+251 silly ADD
+252 silly ADD
+253 silly ADD
+254 silly ADD
+255 silly ADD
+256 silly ADD
+257 silly ADD
+258 silly ADD
+259 silly ADD
+260 silly ADD
+261 silly ADD
+262 silly ADD
+263 silly ADD
+264 silly ADD
+265 silly ADD
+266 silly ADD
+267 silly ADD
+268 silly ADD
+269 silly ADD
+270 silly ADD
+271 silly ADD
+272 silly ADD
+273 silly ADD
+274 silly REMOVE node_modules/yargs-parser
+275 silly REMOVE node_modules/yargs
+276 silly REMOVE node_modules/y18n
+277 silly REMOVE node_modules/wrap-ansi
+278 silly REMOVE node_modules/websocket-extensions
+279 silly REMOVE node_modules/websocket-driver
+280 silly REMOVE node_modules/tslib
+281 silly REMOVE node_modules/strip-ansi
+282 silly REMOVE node_modules/string-width
+283 silly REMOVE node_modules/safe-buffer
+284 silly REMOVE node_modules/require-directory
+285 silly REMOVE node_modules/protobufjs
+286 silly REMOVE node_modules/long
+287 silly REMOVE node_modules/lodash.camelcase
+288 silly REMOVE node_modules/is-fullwidth-code-point
+289 silly REMOVE node_modules/idb
+290 silly REMOVE node_modules/http-parser-js
+291 silly REMOVE node_modules/get-caller-file
+292 silly REMOVE node_modules/firebase
+293 silly REMOVE node_modules/faye-websocket
+294 silly REMOVE node_modules/emoji-regex
+295 silly REMOVE node_modules/cliui
+296 silly REMOVE node_modules/ansi-regex
+297 silly REMOVE node_modules/@protobufjs/utf8
+298 silly REMOVE node_modules/@protobufjs/pool
+299 silly REMOVE node_modules/@protobufjs/path
+300 silly REMOVE node_modules/@protobufjs/inquire
+301 silly REMOVE node_modules/@protobufjs/float
+302 silly REMOVE node_modules/@protobufjs/fetch
+303 silly REMOVE node_modules/@protobufjs/eventemitter
+304 silly REMOVE node_modules/@protobufjs/codegen
+305 silly REMOVE node_modules/@protobufjs/base64
+306 silly REMOVE node_modules/@protobufjs/aspromise
+307 silly REMOVE node_modules/@grpc/proto-loader
+308 silly REMOVE node_modules/@grpc/grpc-js
+309 silly REMOVE node_modules/@firebase/webchannel-wrapper
+310 silly REMOVE node_modules/@firebase/vertexai
+311 silly REMOVE node_modules/@firebase/util
+312 silly REMOVE node_modules/@firebase/storage-types
+313 silly REMOVE node_modules/@firebase/storage-compat
+314 silly REMOVE node_modules/@firebase/storage
+315 silly REMOVE node_modules/@firebase/remote-config-types
+316 silly REMOVE node_modules/@firebase/remote-config-compat
+317 silly REMOVE node_modules/@firebase/remote-config
+318 silly REMOVE node_modules/@firebase/performance-types
+319 silly REMOVE node_modules/@firebase/performance-compat
+320 silly REMOVE node_modules/@firebase/performance
+321 silly REMOVE node_modules/@firebase/messaging-interop-types
+322 silly REMOVE node_modules/@firebase/messaging-compat
+323 silly REMOVE node_modules/@firebase/messaging
+324 silly REMOVE node_modules/@firebase/logger
+325 silly REMOVE node_modules/@firebase/installations-types
+326 silly REMOVE node_modules/@firebase/installations-compat
+327 silly REMOVE node_modules/@firebase/installations
+328 silly REMOVE node_modules/@firebase/functions-types
+329 silly REMOVE node_modules/@firebase/functions-compat
+330 silly REMOVE node_modules/@firebase/functions
+331 silly REMOVE node_modules/@firebase/firestore-types
+332 silly REMOVE node_modules/@firebase/firestore-compat
+333 silly REMOVE node_modules/@firebase/firestore
+334 silly REMOVE node_modules/@firebase/database-types
+335 silly REMOVE node_modules/@firebase/database-compat
+336 silly REMOVE node_modules/@firebase/database
+337 silly REMOVE node_modules/@firebase/data-connect
+338 silly REMOVE node_modules/@firebase/component
+339 silly REMOVE node_modules/@firebase/auth-types
+340 silly REMOVE node_modules/@firebase/auth-interop-types
+341 silly REMOVE node_modules/@firebase/auth-compat
+342 silly REMOVE node_modules/@firebase/auth
+343 silly REMOVE node_modules/@firebase/app-types
+344 silly REMOVE node_modules/@firebase/app-compat
+345 silly REMOVE node_modules/@firebase/app-check-types
+346 silly REMOVE node_modules/@firebase/app-check-interop-types
+347 silly REMOVE node_modules/@firebase/app-check-compat
+348 silly REMOVE node_modules/@firebase/app-check
+349 silly REMOVE node_modules/@firebase/app
+350 silly REMOVE node_modules/@firebase/analytics-types
+351 silly REMOVE node_modules/@firebase/analytics-compat
+352 silly REMOVE node_modules/@firebase/analytics
+353 silly REMOVE node_modules/@auth0/auth0-spa-js
+354 silly REMOVE node_modules/@auth0/auth0-react
+355 verbose cwd /home/iskender.cevik/chatbot-project/frontend
+356 verbose os Linux 6.1.0-29-cloud-amd64
+357 verbose node v18.20.6
+358 verbose npm  v10.8.2
+359 verbose exit 0
+360 info ok

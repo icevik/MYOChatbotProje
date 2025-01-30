@@ -36,3 +36,91 @@
 2025-01-30 05:41:13.196 [warning] [Decorations] CAPPING events from decorations provider vscode.git 9475
 2025-01-30 05:41:18.651 [warning] [Decorations] CAPPING events from decorations provider vscode.git 9475
 2025-01-30 05:41:24.024 [warning] [Decorations] CAPPING events from decorations provider vscode.git 9475
+2025-01-30 05:49:37.001 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2025-01-30 05:49:37.001 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2025-01-30 05:51:23.401 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+2025-01-30 05:57:24.136 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:typescriptreact'
+2025-01-30 06:23:13.073 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2025-01-30 06:23:20.452 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-01-30 06:23:20.452 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+2025-01-30 07:09:25.721 [info] Extension host terminating: renderer disconnected for too long (2)
+2025-01-30 07:09:25.723 [info] Lock '/home/iskender.cevik/.cursor-server/data/User/workspaceStorage/cf49d59b8f2ec629d0ebe372a2a95ca2/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2025-01-30 07:09:25.800 [error] Canceled: Canceled
+	at new swe (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:45:158754)
+	at iW.U (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:45:163376)
+	at r.<computed>.a.charCodeAt.r.<computed> (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:45:160868)
+	at cH.g (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:136:32525)
+	at cH.executeCommand (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:136:32029)
+	at t.registerCommand.description (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:136:31359)
+	at cH.h (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:136:33046)
+	at cH.g (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:136:32122)
+	at cH.executeCommand (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:136:32029)
+	at Object.executeCommand (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:178:41373)
+	at pA.L [as value] (/home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/extensions/git/dist/main.js:2:977678)
+	at C.B (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:30:747)
+	at C (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:30:817)
+	at C.fire (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:30:1034)
+	at Object.f [as dispose] (/home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/extensions/git/dist/main.js:2:999254)
+	at /home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/extensions/git/dist/main.js:2:1005376
+	at Array.forEach (<anonymous>)
+	at C.dispose (/home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/extensions/git/dist/main.js:2:1005362)
+	at NU.<anonymous> (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:129:20083)
+	at NU.dispose (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:129:20179)
+	at NU.<anonymous> (/home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/extensions/git/dist/main.js:2:980157)
+	at NU.dispose (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:129:20179)
+	at Hs (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:25:706)
+	at file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:140:15078
+	at file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:25:1017
+	at Object.dispose (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:8:708)
+	at tje.eb (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:140:11965)
+	at file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:140:9919
+	at Array.map (<anonymous>)
+	at tje.$ (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:140:9907)
+	at tje.terminate (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:140:10150)
+	at lue.terminate (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:141:1435)
+	at Hr (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:196:15168)
+	at ez.a (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:196:12063)
+	at ez.h (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:31:76109)
+	at listOnTimeout (node:internal/timers:581:17)
+	at process.processTimers (node:internal/timers:519:7) setContext undefined
+2025-01-30 07:09:25.801 [error] Canceled: Canceled
+	at new swe (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:45:158754)
+	at iW.U (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:45:163376)
+	at r.<computed>.a.charCodeAt.r.<computed> (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:45:160868)
+	at cH.g (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:136:32525)
+	at cH.executeCommand (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:136:32029)
+	at t.registerCommand.description (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:136:31359)
+	at cH.h (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:136:33046)
+	at cH.g (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:136:32122)
+	at cH.executeCommand (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:136:32029)
+	at Object.executeCommand (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:178:41373)
+	at set hasGitHubRepositories [as hasGitHubRepositories] (/home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/extensions/github/dist/extension.js:2:328629)
+	at /home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/extensions/github/dist/extension.js:2:329588
+	at pA.value (/home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/extensions/git/dist/main.js:2:1093221)
+	at C.B (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:30:747)
+	at C (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:30:817)
+	at C.fire (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:30:1034)
+	at Object.f [as dispose] (/home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/extensions/git/dist/main.js:2:999254)
+	at /home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/extensions/git/dist/main.js:2:1005376
+	at Array.forEach (<anonymous>)
+	at C.dispose (/home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/extensions/git/dist/main.js:2:1005362)
+	at NU.<anonymous> (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:129:20083)
+	at NU.dispose (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:129:20179)
+	at NU.<anonymous> (/home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/extensions/git/dist/main.js:2:980157)
+	at NU.dispose (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:129:20179)
+	at Hs (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:25:706)
+	at file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:140:15078
+	at file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:25:1017
+	at Object.dispose (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:8:708)
+	at tje.eb (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:140:11965)
+	at file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:140:9919
+	at Array.map (<anonymous>)
+	at tje.$ (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:140:9907)
+	at tje.terminate (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:140:10150)
+	at lue.terminate (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:141:1435)
+	at Hr (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:196:15168)
+	at ez.a (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:196:12063)
+	at ez.h (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/workbench/api/node/extensionHostProcess.js:31:76109)
+	at listOnTimeout (node:internal/timers:581:17)
+	at process.processTimers (node:internal/timers:519:7) setContext undefined
+2025-01-30 07:09:25.818 [info] Extension host with pid 1246 exiting with code 0

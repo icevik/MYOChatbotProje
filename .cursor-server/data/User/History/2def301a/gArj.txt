@@ -1,0 +1,717 @@
+Aşağıdaki teknik doküman, istediğiniz yapay zeka tabanlı chatbot sisteminin tasarımını, işlevlerini ve teknik detaylarını kapsamaktadır. Doküman; **sayfa bazlı** bir yaklaşım, **veri tabanı modeli**, **roller ve yetkiler** ve **teknik mimari** gibi ana başlıkları içerir. Adım adım ilerleyerek, sistemin nasıl tasarlanması gerektiğini ve hangi teknolojilerin kullanılabileceğini açıklayacağız.
+
+---
+
+## 1. Sistem Mimarisi
+
+1. **Front-End (Kullanıcı Arayüzü)**
+   - React, Vue.js veya Angular gibi bir framework kullanılabilir.
+   - Kullanıcı dostu bir arayüz tasarımı önceliklidir (Responsive design).
+   - Google ile giriş yapabilmek için Google OAuth entegrasyonu yapılmalı.
+   - Tüm sayfalarda, üst kısımda veya sağ üstte kullanıcı adı ve “Çıkış Yap” butonu görünmeli.
+   - Menüde sol tarafta (sidebar) “INP, MEC, AUT, ELT” gibi kategoriler (veya oluşturulacak yeni kategoriler) yer alacak.
+
+2. **Back-End (Sunucu)**
+   - Node.js (Express.js vb.), Python (Django/Flask/FastAPI vb.) veya benzeri bir teknoloji kullanılabilir.
+   - Google OAuth ile kimlik doğrulama entegrasyonu.
+   - Kullanıcıların chatbot etkileşimlerini kaydedecek ve yönetecek API uç noktaları (endpoints).
+   - Admin Dashboard için yönetim panellerine özel API uç noktaları.
+   - Ders ekleme, kategori ekleme/silme, kullanıcı verilerini görüntüleme, banlama gibi yönetim işlemleri.
+
+3. **Veri Tabanı**
+   - **MongoDB** (Docker içerisinde) kullanılabilir.
+   - Ana koleksiyonlar:
+     - **users**: Kullanıcı bilgileri (isim, e-posta, rol, ban durumu vb.)
+     - **conversations**: Kullanıcıların bot ile yaptığı tüm konuşmaların kayıtları.
+     - **courses (dersler)**: Ders bilgileri (ders adı, kategori, host adresi, chatbot ID, güvenlik anahtarı vb.)
+     - **settings veya adminConfigs**: Sunucu kapasite bilgileri, varsayılan ayarlar, desteklenen AI modelleri vb.
+
+4. **Docker Konteynerleri**
+   - Uygulamanın ölçeklenebilir ve rahat yönetilebilir olması için tüm servisler Docker içinde çalıştırılabilir.
+   - Bir Docker Compose dosyası ile:
+     - **Uygulama** (Node.js veya Python)
+     - **MongoDB** konteyneri
+     - (İsteğe bağlı) Nginx veya benzeri proxy
+
+5. **Güvenlik ve Erişim Yönetimi**
+   - Google OAuth ile sadece `@yeditepe.edu.tr` ve `@std.yeditepe.edu.tr` uzantılı hesapların giriş yapabilmesi.
+   - Kullanıcı rolleri:
+     - **User (Öğrenci)**: Chatbot kullanabilme, kendi profilini düzenleyebilme, geçmiş konuşmaları görebilme.
+     - **Admin (Yönetici/Öğretmen)**: Sistemdeki tüm kullanıcıları görüntüleyebilme, banlama, ders & kategori yönetimi, ayar yönetimi, AI modeli seçimi vb.
+   - JWT (JSON Web Token) veya session bazlı auth mekanizması (Google giriş sonrası).
+
+---
+
+## 2. Veri Tabanı Tasarımı (MongoDB)
+
+### 2.1. Koleksiyon: `users`
+```json
+{
+  "_id": ObjectId("..."),
+  "name": "Ali Veli",
+  "email": "ali.veli@yeditepe.edu.tr",
+  "role": "user",  // "admin" veya "user"
+  "banned": false,
+  "createdAt": ISODate("2025-01-01T10:00:00Z"),
+  "updatedAt": ISODate("2025-01-10T15:30:00Z")
+}
+```
+
+### 2.2. Koleksiyon: `conversations`
+```json
+{
+  "_id": ObjectId("..."),
+  "userId": ObjectId("..."), // users._id
+  "courseId": ObjectId("..."), // courses._id - hangi derse ait chatbot'a soru sorulduğu bilgisi
+  "messages": [
+    {
+      "role": "user",         // veya "assistant"
+      "content": "Bu dersi ne zaman alabiliriz?",
+      "timestamp": ISODate("2025-01-12T09:00:00Z")
+    },
+    {
+      "role": "assistant",
+      "content": "Gelecek dönem açılıyor.",
+      "timestamp": ISODate("2025-01-12T09:01:00Z")
+    }
+  ],
+  "createdAt": ISODate("2025-01-12T09:00:00Z"),
+  "updatedAt": ISODate("2025-01-12T09:01:00Z")
+}
+```
+
+### 2.3. Koleksiyon: `courses`
+```json
+{
+  "_id": ObjectId("..."),
+  "name": "INP101",
+  "category": "INP", 
+  "hostAddress": "https://www.knowhy.site/api/v1/prediction/",
+  "chatbotId": "8ac4c401-7adb-42a7-b100-69b331911348",
+  "securityKey": "fwtHfA4ELjKJQLRCrlSZ20KzmiYYEu4urcyDG2Z-5Pk",
+  "description": "Girişimcilik dersi...", 
+  "createdAt": ISODate("2025-01-10T14:00:00Z"),
+  "updatedAt": ISODate("2025-01-10T14:00:00Z"),
+  "isActive": true 
+}
+```
+
+### 2.4. Koleksiyon: `adminConfigs`
+```json
+{
+  "_id": ObjectId("..."),
+  "supportedModels": ["GPT-3.5", "GPT-4", "BERT", "CUSTOM-API"],
+  "serverCapacity": {
+    "cpu": "10%",
+    "memory": "1.2GB / 8GB"
+  },
+  "updatedAt": ISODate("2025-01-15T13:00:00Z")
+}
+```
+
+> Not: `adminConfigs` tek bir döküman veya bir dizi konfigürasyon dökümanı olarak tutulabilir.
+
+---
+
+## 3. Kullanıcı Rolleri ve Akışlar
+
+1. **Öğrenci (User) Akışı:**
+   1. Google ile giriş yapar.
+   2. Giriş sonrasında sol menüde (sidebar) uygun kategorileri ve dersleri görür.
+   3. Bir derse tıklayarak chatbot arayüzüne geçer.
+   4. Mesaj yazar ve gönderir.
+   5. Bot’tan gelen cevaplar ekranda anlık olarak gösterilir.
+   6. Geçmiş konuşmalar “Geçmiş” veya “Konuşma Geçmişi” sekmesinde listelenir.
+   7. Profil sayfasından e-posta ve şifre düzenleme (veya isim, şifre güncelleme) yapabilir.
+      - *E-posta Google OAuth ile senkronize olduğundan genelde değişmez, ancak bu ekranda şifresi/kişisel bilgileri yönetebilir.*
+
+2. **Admin (Yönetici) Akışı:**
+   1. Aynı şekilde Google ile giriş yapar (rol = admin).
+   2. Admin Dashboard ekranına erişebilir.
+   3. Dashboard’da şunları yapabilir:
+      - Kullanıcı listesi: Aktif/Banned kullanıcıları görüntüleme, kullanıcı banlama/ban kaldırma.
+      - Dersler & Kategoriler: Yeni ders ekleme, düzenleme, silme, kategoriler ekleme/silme.
+      - Mesaj Geçmişi: Belli bir kullanıcıya ait tüm konuşmaları görüntüleme.
+      - Yapay Zeka Dil Modeli Seçimi: AI modeli veya API ayarlarını yapılandırma.
+      - Sunucu kapasite bilgileri: CPU, bellek kullanımı, vb.
+   4. Ders ekleme ekranından “hostAddress, chatbotId, securityKey” gibi bilgileri girerek ilgili dersin chatbot’una bağlanır.
+   5. Ders aktif hale geldikten sonra öğrenciler chatbot’u kullanmaya başlar.
+
+---
+
+## 4. Sayfa Tasarımları (Adım Adım)
+
+Aşağıda her sayfa için temel fonksiyonlar ve içerik listelenmiştir.
+
+### 4.1. **Login Sayfası**
+- **Adres**: `/login`
+- **İşlev**: 
+  - Yalnızca Google ile giriş butonu bulundurur. 
+  - Giriş butonuna tıklandığında Google OAuth akışı başlatılır.
+  - Sadece `@yeditepe.edu.tr` ve `@std.yeditepe.edu.tr` uzantılı hesaplar kabul edilir. Diğer uzantılar hata mesajı alır (“Bu e-posta uzantısıyla giriş yapılamaz” vb.).
+  - "Hesap oluşturma talebin bulun" butonu:
+    - Bu butona tıklayınca, kullanıcıya nasıl hesap talebi oluşturacağı hakkında basit bir form veya talimat gösterilebilir. (Ör. admin onaylı ek süreç)
+
+**Arayüz Bileşenleri**:
+1. Logo veya sistem adı.
+2. Google ile Giriş Yap butonu.
+3. `Hesap oluşturma talebin bulun` link/buton (isteğe bağlı pop-up veya başka bir sayfa).
+
+### 4.2. **Ana Sayfa (Kategori Listeleme)**
+- **Adres**: `/`
+- **İşlev**: 
+  - Solda kategoriler listesi (INP, MEC, AUT, ELT ya da eklenen diğer kategoriler).
+  - Orta kısımda sistemle ilgili duyurular veya kullanıcıya hoş geldin mesajı.
+  - Sağ üstte kullanıcı adı ve çıkış yap butonu.
+  - Alt kısımda veya yan kısımda “Geçmiş Konuşmalar” listesi (kullanıcının en son yaptığı konuşmalara hızlı erişim).
+
+**Arayüz Bileşenleri**:
+1. **Sidebar**:
+   - INP
+   - MEC
+   - AUT
+   - ELT
+   - (Yeni Kategoriler...)
+2. **Header**:
+   - Kullanıcı adı (Ör. “Hoş geldin, Ali Veli”)
+   - Çıkış yap butonu.
+3. **Orta Panel**:
+   - “Sık kullanılan dersler” veya “Duyurular” (isteğe bağlı).
+
+### 4.3. **Kategori Altı Ders Listesi Sayfası**
+- **Adres**: `/category/:categoryName`
+- **İşlev**:
+  - Seçilen kategoriye ait derslerin listelenmesi (Örn. INP -> TKL201, HTR301, MYO101, vb.).
+  - Ders adına tıklayınca chatbot sayfasına yönlendirme.
+
+**Arayüz Bileşenleri**:
+1. Dersler tabloları/listeleri.
+2. Ders adına tıklandığında `/course/:courseId` veya benzeri bir rotaya gidilir.
+
+### 4.4. **Chatbot Sayfası**
+- **Adres**: `/course/:courseId`
+- **İşlev**:
+  - Kullanıcı seçili derse ait chatbot ile etkileşime girer.
+  - Mesaj yazma alanı, gönder butonu.
+  - Sohbet geçmişi ekranı (sadece bu derse ait).
+  - API isteği şu formata göre gönderilir:
+    ```bash
+    curl https://www.knowhy.site/api/v1/prediction/<chatbotId> \
+         -X POST \
+         -d '{
+               "question": "...",
+               "overrideConfig": {
+                 "returnSourceDocuments": true,
+                 "rephrasePrompt": "...",
+                 "responsePrompt": "...",
+                 "openAIApiKey": "..."
+               }
+             }' \
+         -H "Content-Type: application/json" \
+         -H "Authorization: Bearer <securityKey>" 
+    ```
+  - API yanıtı alındıktan sonra ekrana yansıtılır ve `conversations` koleksiyonuna kaydedilir.
+
+**Arayüz Bileşenleri**:
+1. Sohbet ekranı (mesajları listeleyen bir alan).
+2. Metin girişi ve Gönder butonu.
+3. Geri dönüş veya başka bir derse geçiş için link/menü.
+
+### 4.5. **Geçmiş Konuşmalar Sayfası**
+- **Adres**: `/history` veya profil altında bir sekme
+- **İşlev**:
+  - Kullanıcının yaptığı tüm konuşmaların genel listesi.
+  - Kategori -> Ders -> Konuşma şeklinde filtreleme imkanı.
+  - İlgili konuşmaya tıklayınca detay açılır.
+
+**Arayüz Bileşenleri**:
+1. Konuşma listesi (Ders adı, son mesajın özeti, tarih).
+2. Detayına gitmek için link veya açılır panel.
+
+### 4.6. **Profil Sayfası**
+- **Adres**: `/profile`
+- **İşlev**:
+  - Kullanıcının isim, şifre gibi bilgilerini düzenlemesi.
+  - Email değiştirme opsiyonel (Google OAuth nedeniyle genelde sabit).
+  - Profil fotoğrafı (Google’dan çekilen) gösterilebilir.
+
+**Arayüz Bileşenleri**:
+1. İsim alanı
+2. Şifre alanı
+3. Güncelle butonu
+4. Profil resmi (isteğe bağlı)
+
+---
+
+## 5. Admin Dashboard (Yönetici Paneli)
+
+### 5.1. **Admin Dashboard Ana Sayfası**
+- **Adres**: `/admin`
+- **İşlev**: Yöneticiye özel istatistikler ve hızlı erişimler.
+- **Gösterilecek Bilgiler**:
+  - Toplam kullanıcı sayısı
+  - Aktif kullanıcı sayısı
+  - Banlı kullanıcı sayısı
+  - Toplam soru sayısı
+  - Sunucu kapasite bilgileri (CPU, bellek)
+
+**Arayüz Bileşenleri**:
+1. Kartlar (istatistikler)
+2. Sidebar navigasyonu (Kullanıcı Yönetimi, Ders Yönetimi, Mesaj Geçmişi, Ayarlar vb.)
+
+### 5.2. **Kullanıcı Yönetimi (User Management)**
+- **Adres**: `/admin/users`
+- **İşlev**:
+  - Sistemdeki tüm kullanıcılar listelenir.
+  - Arama ve filtreleme (banlı / banlı değil).
+  - Kullanıcıyı banla / ban kaldır butonları.
+  - Kullanıcının rolünü değiştir (user -> admin) gibi işlemler (isteğe bağlı).
+
+**Arayüz Bileşenleri**:
+1. Kullanıcı listesi (İsim, Email, Rol, Ban Durumu, Kayıt Tarihi).
+2. “Banla” / “Ban Kaldır” butonu.
+3. Rol değiştirme menüsü.
+
+### 5.3. **Ders Yönetimi (Course Management)**
+- **Adres**: `/admin/courses`
+- **İşlev**:
+  - Tüm derslerin listelenmesi (INP101, ELT101, AUT103 vb.).
+  - Ders ekleme, düzenleme, silme.
+  - Ders aktif/pasif durumu değiştirme.
+  - **Ders Ekleme Ekranı**: 
+    - `Host Adresi`, `Chatbot ID`, `Güvenlik Anahtarı` gibi alanlar girilir.
+    - Bu bilgilerle API istekleri yapılacaktır (örn. knowhy API).
+  - Kategorileri yönetme (Yeni kategori oluştur, sil vb.)
+
+**Arayüz Bileşenleri**:
+1. Ders listesi (isim, kategori, aktiflik durumu).
+2. “Ders Ekle” butonu (yeni sayfa veya modal).
+   - Form alanları: `name`, `category`, `hostAddress`, `chatbotId`, `securityKey`, `description`.
+3. Düzenleme butonu.
+4. Silme butonu.
+
+### 5.4. **Mesaj Geçmişi (Conversations)**
+- **Adres**: `/admin/conversations`
+- **İşlev**:
+  - Tüm kullanıcıların sorduğu mesajları görüntüleme.
+  - Filtre: Kullanıcı adına göre, ders adına göre, tarih aralığına göre.
+  - Detayını görüntüleme (kullanıcı sormuş, asistan cevaplamış).
+  - Gizlilik ilkeleri gereği hangi verilerin görüntülenebileceği admin politikalarına bağlıdır, ancak talep ettiğiniz gibi tüm yazışmalar görülebilir.
+
+**Arayüz Bileşenleri**:
+1. Mesaj listesi (Kullanıcı, Ders, Son Mesaj, Tarih)
+2. Arama / Filtre alanı
+
+### 5.5. **Ayarlar (Settings)**
+- **Adres**: `/admin/settings`
+- **İşlev**:
+  - Sunucu kapasite bilgileri görüntüleme ve güncelleme (manuel veya otomatik).
+  - Yapay Zeka model seçimi (GPT-3.5, GPT-4, vb.).
+  - Sistemde global düzeyde geçerli olacak ayarlar (loglama, bakım modu vb.).
+
+**Arayüz Bileşenleri**:
+1. Server Capacity (CPU, Memory) gösterimi (API ile çekilip gösterilebilir).
+2. AI Modeli seçmek için dropdown/çoktan seçmeli liste.
+3. Ayarları kaydet butonu.
+
+---
+
+## 6. API Katmanı
+
+### 6.1. Auth ve Kullanıcı Yönetimi
+
+1. **POST** `/api/auth/google`
+   - Google OAuth sürecini başlatır veya callback alır.
+   - Kullanıcı e-postasına göre `@yeditepe.edu.tr` veya `@std.yeditepe.edu.tr` uzantı kontrolü yapılır.
+   - Yetkili ise JWT üretilir, front-end’e gönderilir.
+
+2. **GET** `/api/users`
+   - **Admin** erişimine açık.
+   - Tüm kullanıcıların listesini döndürür.
+
+3. **PATCH** `/api/users/:userId/ban`
+   - **Admin** erişimine açık.
+   - Kullanıcıyı banlar veya banını kaldırır.
+
+### 6.2. Ders Yönetimi
+
+1. **GET** `/api/courses`
+   - Tüm dersleri veya belirli bir kategoriye ait dersleri döndürür.
+
+2. **POST** `/api/courses`
+   - **Admin** erişimine açık.
+   - Ders ekler (name, category, hostAddress, chatbotId, securityKey, vb.).
+
+3. **PATCH** `/api/courses/:courseId`
+   - **Admin** erişimine açık.
+   - Ders bilgilerini günceller.
+
+4. **DELETE** `/api/courses/:courseId`
+   - **Admin** erişimine açık.
+   - Derste silme işlemi.
+
+### 6.3. Chatbot (Konuşma) Yönetimi
+
+1. **POST** `/api/conversations/:courseId`
+   - Kullanıcı bir mesaj gönderdiğinde bu endpoint çağrılır.
+   - Body: `{ message: "..."}`
+   - Sunucu, ilgili `courseId` için `courses` koleksiyonundan `hostAddress`, `chatbotId`, `securityKey` bilgilerini alır.
+   - `curl` veya HTTP post ile (örneğin axios/fetch) API isteği yapılır.
+   - Dönen sonuç kaydedilir ve front-end’e geri döndürülür.
+
+2. **GET** `/api/conversations/user/:userId`
+   - Kullanıcının tüm konuşmaları listelenir.
+
+3. **GET** `/api/conversations/:conversationId`
+   - Tekil bir konuşmanın detaylarını döndürür.
+
+---
+
+## 7. Adım Adım Geliştirme Süreci
+
+1. **Proje Kurulumu**  
+   - Front-end ve Back-end klasörleri oluşturulur (Monorepo veya ayrı repolar).
+   - Docker Compose dosyası yazılır (MongoDB, uygulama konteyneri vb.).
+
+2. **Google OAuth Entegrasyonu**  
+   - Google Cloud Console’dan OAuth Client ID alınır.
+   - Email domain kısıtlamaları ayarlanır.
+
+3. **Veri Tabanı Modelleri (MongoDB)**  
+   - `users`, `courses`, `conversations`, `adminConfigs` koleksiyonları oluşturulur.
+   - Mongoose (Node.js) veya PyMongo (Python) vb. ile şema tanımları.
+
+4. **Auth Mekanizması**  
+   - Google’dan dönen token, back-end’de doğrulanır.
+   - Sadece istenen domain uzantıları kabul edilir.
+   - Kullanıcı var mı yok mu kontrolü yapılır, yoksa create.
+   - JWT token üretilerek front-end’e gönderilir.
+
+5. **Admin Dashboard**  
+   - Admin rolde giriş yapan kullanıcılar `/admin` sayfasına erişebilir.
+   - Kullanıcı yönetimi, ders yönetimi, mesaj görüntüleme işlevleri tamamlanır.
+
+6. **Ders Ekleme & Kategori Yönetimi**  
+   - Admin “Ders Ekle” formu ile hostAddress, chatbotId, securityKey girer.
+   - Kategori ekleme/silme (istenirse) yapılır.
+   - Kaydedilir, front-end’de listelenir.
+
+7. **Chatbot Bağlantısı**  
+   - Öğrenci derse tıkladığında, `/course/:courseId` sayfasında soru sorar.
+   - Back-end `courses` tablosundan API bilgilerini çekerek 3. parti API’ye istek atar.
+   - Gelen yanıt veritabanına kaydedilir ve kullanıcıya gösterilir.
+
+8. **Geçmiş Konuşmalar**  
+   - Her konuşma `conversations` koleksiyonuna kaydedilir.
+   - Kullanıcının geçmişi profilinde veya ayrı bir sayfada listelenir.
+
+9. **Ek Özellikler & Test**  
+   - Banlama işlemi test edilir.
+   - Sunucu kapasite bilgileri (örneğin Node.js içinden os modülü kullanarak veya Docker API’leri ile) çekilip admin panelde gösterilir.
+   - Tasarım iyileştirmeleri, responsive yapı vb.
+
+10. **Güvenlik & Dağıtım**  
+    - HTTPS zorunluluğu (SSL sertifikaları).
+    - Docker Compose üzerinden test ortamında çalıştırma.
+    - Production ortamına deploy (AWS, Azure, GCP vb.)
+
+---
+
+## 8. Örnek API İsteği Akışı
+
+- Öğrenci `INP101` sayfasına girip “Sınav tarihi nedir?” sorusunu yazıp gönderdi.
+- Front-end, `POST /api/conversations/12345` (örnek courseId) endpoint’ini çağırır:
+  ```json
+  {
+    "message": "Sınav tarihi nedir?"
+  }
+  ```
+- Back-end, `courses` koleksiyonundan `_id=12345` olan dersin `hostAddress`, `chatbotId`, `securityKey` bilgilerini alır.
+- KnowHy API’sine cURL veya HTTP client ile isteği yapar:
+  ```bash
+  POST https://www.knowhy.site/api/v1/prediction/8ac4c401-7adb-42a7-b100-69b331911348
+  Authorization: Bearer fwtHfA4EL...
+  Content-Type: application/json
+
+  {
+    "question": "Sınav tarihi nedir?",
+    "overrideConfig": {
+      "returnSourceDocuments": true,
+      "rephrasePrompt": "example",
+      "responsePrompt": "example",
+      "openAIApiKey": "example"
+    }
+  }
+  ```
+- Yanıt alındıktan sonra `conversations` koleksiyonuna kaydedilir ve front-end’e döndürülür.
+
+
+## 10. Sonuç
+
+Bu dokümanda, **yapay zeka tabanlı chatbot sitesi**nin adım adım teknik tasarımını ve sayfa bazlı planlamasını yaptık. Sistemin başlıca bileşenleri:
+
+- **Login** (Google OAuth, domain kısıtlaması)  
+- **Ana Sayfa (Kategori Listeleme)** ve **Ders Sayfaları**  
+- **Chatbot Ekranı** (API bağlantısı, mesaj kaydı)  
+- **Profil** (Kişisel bilgiler düzenleme)  
+- **Admin Dashboard** (Kullanıcı Yönetimi, Ders Yönetimi, Mesaj Geçmişi, Sunucu Bilgileri, AI Model Seçimi vb.)  
+- **Veri Tabanı** (MongoDB koleksiyonları) ve **Docker Ortamı**
+
+Bu temel mimari ve fonksiyonlarla, okulunuzdaki öğrenciler için güvenli, kullanıcı dostu ve yönetilebilir bir chatbot platformu inşa edebilirsiniz. Geliştirme sürecinde, hatırlanmayan veya ihtiyaç duyulan ek özellikler, bu dokümana eklenerek proje kapsamı genişletilebilir. 
+
+Her sayfa ve fonksiyon için gereken tüm detaylar ve veri akışları yukarıda açıklandığı şekilde uygulanarak, tam işlevsel bir sistemi hayata geçirebilirsiniz.
+
+
+FIREBASE İLE GOOGLE ENTEGRASYONU
+:**Kısa Cevap:**  
+Evet, Firebase Authentication ile Google girişini kullanıp geri kalan verileri MongoDB’de tutmak mümkündür. Sistemi “bozmaz”, sadece kimlik doğrulama (authentication) katmanını Firebase’e taşımış olursunuz. Kullanıcıların rollerini, ban durumlarını, chatbot geçmiş kayıtlarını yine MongoDB’de saklayabilirsiniz.
+
+Aşağıda bunun nasıl yapılabileceğine dair adım adım bir yol haritası bulabilirsiniz.
+
+---
+
+## 1. Mimari Açıklama
+
+- **Firebase Authentication**: Google ile giriş (sign-in) işlemini yapar, kullanıcıyı doğrular, size bir **ID Token** veya **access token** sağlar.
+- **Back-End (Node.js/Python vs.)**:  
+  - Firebase Admin SDK kullanarak gelen ID Token’ı doğrular.  
+  - Kullanıcının e-postasını, adını vb. bilgileri elde eder.  
+  - E-postadaki uzantıyı kontrol eder (örneğin `@yeditepe.edu.tr` / `@std.yeditepe.edu.tr`).  
+  - MongoDB’de kullanıcıya ait ek bilgileri (rol, ban durumu, vb.) saklar veya günceller.  
+  - Uygulamanın geri kalanında yine JWT veya session ile güvenli bir şekilde kullanıcı kimliği korunabilir.  
+- **MongoDB**: Kullanıcının ek bilgileri (rol, ban, önceki konuşmalar, vb.) saklanır. Kullanıcının asıl şifresi Firebase tarafında tutulduğu için, MongoDB tarafında parolaya gerek kalmaz.
+
+Bu şekilde kimlik doğrulama (auth) Firebase’de, verilerin yönetimi ise MongoDB ve kendi sunucunuzda olur. Yani ikisi birbiriyle çakışmaz, birbirini tamamlar.
+
+---
+
+## 3. Front-End’de Firebase ile Google Girişi
+
+Front-End tarafında (React, Vue, Angular vb.) Firebase SDK’yı kurup **Google OAuth akışını** tetikleyebilirsiniz. Örneğin React için temel bir örnek:
+
+```javascript
+// firebase.js
+import { initializeApp } from "firebase/app";
+import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+
+// 1. Firebase Config (Firebase Console'dan aldığınız bilgiler)
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_PROJECT.firebaseapp.com",
+  projectId: "YOUR_PROJECT_ID",
+  // vs.
+};
+
+// 2. Firebase'i başlat
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
+// 3. Google Provider
+const provider = new GoogleAuthProvider();
+
+// 4. Giriş fonksiyonu
+export async function signInWithGoogle() {
+  const result = await signInWithPopup(auth, provider);
+  // Giriş başarılı olursa kullanıcı bilgileri
+  return result.user; 
+}
+```
+
+Ardından, örnek bir **Login** bileşeninde:
+
+```javascript
+// Login.js (React örneği)
+import React from 'react';
+import { signInWithGoogle } from './firebase';
+
+function Login() {
+  const handleGoogleLogin = async () => {
+    try {
+      const user = await signInWithGoogle();
+      const idToken = await user.getIdToken(); // Firebase ID Token'ını çek
+      // Bu token'ı Back-End'e gönder
+      await fetch("/api/auth/firebase", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ idToken })
+      });
+      // Devamında uygulama akışı...
+    } catch (error) {
+      console.error("Giriş hatası:", error);
+    }
+  };
+
+  return (
+    <div>
+      <button onClick={handleGoogleLogin}>Google ile Giriş Yap</button>
+    </div>
+  );
+}
+
+export default Login;
+```
+
+- **Önemli Nokta**: Firebase tarafında başarılı giriş yaptıktan sonra, `user.getIdToken()` fonksiyonuyla Firebase ID Token alınır ve back-end’e gönderilir.  
+- Ardından back-end, bu token’ı **Firebase Admin SDK** ile doğrular.
+
+---
+
+## 4. Back-End’de Firebase Admin SDK ile Doğrulama
+
+Arka tarafta (Node.js örneği) Firebase Admin SDK kurulur:
+
+```bash
+npm install firebase-admin
+```
+
+Ardından bir `firebaseAdmin.js` dosyası oluşturulur:
+
+```javascript
+// firebaseAdmin.js
+const admin = require("firebase-admin");
+const serviceAccount = require("./serviceAccountKey.json"); 
+// console.firebase.google.com'dan indirilen servis hesabı JSON dosyası
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+});
+
+module.exports = admin;
+```
+
+Şimdi bir **API endpoint** örneği:
+
+```javascript
+// authController.js
+const admin = require("./firebaseAdmin"); 
+const User = require("./models/User"); // MongoDB'deki user modeliniz
+
+async function firebaseAuthLogin(req, res) {
+  try {
+    const { idToken } = req.body;
+    if (!idToken) {
+      return res.status(400).json({ error: "idToken is required" });
+    }
+
+    // 1. Token'ı doğrula
+    const decoded = await admin.auth().verifyIdToken(idToken);
+    // decoded -> { uid, email, name, picture, ... }
+
+    // 2. Email domain kontrolü (örnek)
+    const email = decoded.email;
+    if (!email.endsWith("@yeditepe.edu.tr") && !email.endsWith("@std.yeditepe.edu.tr")) {
+      return res.status(403).json({ error: "Bu e-posta uzantısına izin verilmiyor" });
+    }
+
+    // 3. MongoDB'de kullanıcıyı bul veya oluştur
+    let user = await User.findOne({ email });
+    if (!user) {
+      user = new User({
+        name: decoded.name || "",
+        email: email,
+        role: "user", // default rol
+        banned: false
+      });
+      await user.save();
+    }
+
+    // 4. Lokal JWT (isteğe bağlı) veya session oluşturabilirsiniz
+    // Burada isterseniz user._id'yi encode edip front-end'e JWT dönebilirsiniz
+    // Veya her istekte Firebase ID Token doğrulaması da kullanabilirsiniz
+
+    return res.json({ 
+      message: "Giriş başarılı", 
+      user: {
+        _id: user._id,
+        email: user.email,
+        name: user.name,
+        role: user.role
+      }
+    });
+
+  } catch (error) {
+    console.error("Firebase Auth hatası:", error);
+    return res.status(401).json({ error: "Geçersiz token" });
+  }
+}
+
+module.exports = {
+  firebaseAuthLogin
+};
+```
+
+- **Token Doğrulama**: `admin.auth().verifyIdToken(idToken)` fonksiyonuyla token çözümlenir. İçinden `email`, `uid`, `displayName` gibi alanlar alınır.
+- **Email Domain Check**: `@yeditepe.edu.tr` veya `@std.yeditepe.edu.tr` uzantısını kontrol edebilirsiniz. Uymuyorsa reddedebilirsiniz.
+- **MongoDB’de Kaydetme**: Kullanıcı yoksa oluşturulur, varsa güncellenebilir (örn. isim, foto, vb.).  
+- Giriş sonrası hangi metotla (JWT/session) uygulamanın geri kalanında doğrulama yapacağınıza karar verebilirsiniz.
+
+---
+
+## 5. MongoDB Entegrasyonu
+
+- **Şifre Alanı**: Kullanıcının parolasını MongoDB’de saklamanıza gerek yok. Çünkü tüm şifre işlemlerini Firebase hallediyor.  
+- **Ek Alanlar (Rol, Ban, vb.)**: Bu bilgileri MongoDB tarafında saklamaya devam edebilirsiniz.  
+- **Profil & Diğer Bilgiler**: Kullanıcıya ait profil bilgileri (ör. departman, rol, ban durumu) MongoDB’de kalır. Firebase sadece kimlik doğrulama sağlar.
+
+**Örnek bir User şeması (Mongoose)**:
+```javascript
+// models/User.js
+const mongoose = require("mongoose");
+
+const userSchema = new mongoose.Schema({
+  name: String,
+  email: { type: String, unique: true },
+  role: { type: String, default: "user" },
+  banned: { type: Boolean, default: false },
+  createdAt: { type: Date, default: Date.now }
+});
+
+module.exports = mongoose.model("User", userSchema);
+```
+
+---
+
+## 6. Sistemin Çalışma Akışı
+
+1. **Kullanıcı Login Sayfasına Gider**  
+   - “Google ile Giriş” butonuna basar.  
+
+2. **Front-End Firebase’e Yönlendirir**  
+   - Firebase pop-up/redirect ile Google hesabını seçtirir.  
+
+3. **Kullanıcı Seçilmiş Google Hesabıyla Giriş Yapar**  
+   - Firebase, Google’dan kimlik doğrulamasını alır.  
+
+4. **Front-End, Kullanıcının Firebase ID Token’ını Alır**  
+   - `user.getIdToken()` ile token elde edilir.  
+
+5. **Back-End’e ID Token Gönderilir**  
+   - `/api/auth/firebase` endpoint’ine istek (POST) yapılır.  
+
+6. **Back-End Token’ı Firebase Admin SDK ile Doğrular**  
+   - Eğer e-mail domaini uygunsa MongoDB’de kullanıcı kaydı bulunur veya oluşturulur.  
+
+7. **Back-End Cevap Döner**  
+   - Giriş başarılı -> Front-End kullanıcıyı ana sayfaya veya profil sayfasına yönlendirir.  
+   - İsteğe bağlı kendi JWT’nizi oluşturup `Authorization` header ile sonraki isteklere ekleme yapabilirsiniz. Ya da her istekte Firebase ID Token’ı gönderip **her istekte** Admin SDK ile doğrulamayı tekrarlayabilirsiniz.  
+
+8. **Kalan Tüm İşlemler** (Chatbot, Admin Dashboard, vb.)  
+   - Kullanıcı kimliği doğrulanmış şekilde, MongoDB’deki rolü (admin/user) baz alınarak yetkilendirme yapılır.  
+   - Chatbot konuşmaları, ban durumu kontrolü, admin yetkileri vb. aynı şekilde çalışır.  
+
+---
+
+## 7. Dikkat Edilmesi Gereken Noktalar
+
+1. **Email Domain Kontrolü**  
+   - Firebase’de bir “e-mail domain restriction” seçeneği doğrudan yoktur; kontrolü back-end’de `decoded.email` üzerinden yapmak gerekir.
+2. **Ban Durumu**  
+   - Back-end’de `user.banned` alanını kontrol edip giriş yapmış olsa bile sistemi kullanmamasını sağlayabilirsiniz.
+3. **Ek Profil Bilgileri**  
+   - Firebase sadece temel bilgileri (isim, fotoğraf, email) sağlar. Ek alanlar (okul numarası, rol ataması vb.) MongoDB’de tutulmalıdır.
+4. **Token’ın Süresi**  
+   - Firebase ID Token’ları ~1 saat geçerlidir. Otomatik yenileme (refresh) front-end tarafında Firebase SDK tarafından yönetilir.
+5. **Rol Tabanlı Yönetim**  
+   - Admin kullanıcılar yine MongoDB’de “role: admin” olarak tutulur. Kontrol back-end’de yapılır.
+6. **Uygulama Mimarisi**  
+   - Front-End -> Firebase Auth (Google) -> ID Token -> Back-End -> (Admin SDK ile doğrulama) -> MongoDB

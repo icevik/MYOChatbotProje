@@ -1,0 +1,5 @@
+# HSTS 1.0 Known Hosts database for GNU Wget.
+# Edit at your own risk.
+# <hostname>	<port>	<incl. subdomains>	<created>	<max-age>
+yeditepe.edu.tr	0	1	1738241620	31536000
+www.yeditepe.edu.tr	0	1	1738241619	31536000

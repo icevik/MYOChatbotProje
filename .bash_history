@@ -125,3 +125,89 @@ cd ~/chatbot-project/docker && sudo docker-compose down && sudo docker-compose b
 cd chatbot-project/
 cd docker/
 sudo docker-compose up --build -d
+cd chatbot-project/frontend && npm install firebase
+cd ../backend && npm install firebase-admin
+cd chatbot-project/frontend && npm uninstall @react-oauth/google
+cd ../frontend && npm install @mui/icons-material
+cd ../docker && sudo docker-compose up --build -d
+sudo docker-compose up --build -d
+cd ../docker && sudo docker-compose up --build -d
+sudo docker-compose up --build -d
+cd ../docker && sudo docker-compose up --build -d
+sudo docker system prune -af
+sudo docker-compose up --build -d
+cd chatbot-project/frontend && npm install @auth0/auth0-react
+cd chatbot-project/backend && npm install express-oauth2-jwt-bearer
+cd ../backend && npm install express-oauth2-jwt-bearer
+cd chatbot-project/frontend && npm install @auth0/auth0-react
+sudo docker system prune -af && sudo docker volume prune -f
+sudo docker system prune -af
+tree -I "node_modules"
+tree -I "node_modules"
+cd chatbot-project/docker/
+sudo docker-compose down
+sudo docker-compose up --build -d
+sudo docker system prune -af && sudo docker volume prune -f
+sudo docker-compose up --build -d
+sudo docker system prune -af && sudo docker volume prune -f
+sudo docker-compose down
+sudo docker system prune -af && sudo docker volume prune -f
+sudo docker-compose up --build -d
+sudo docker-compose down
+sudo docker system prune -af && sudo docker volume prune -f
+sudo docker-compose up --build -d
+sudo docker system prune -af && sudo docker volume prune -f
+sudo docker-compose up --build -d
+sudo docker system prune -af && sudo docker volume prune -f
+sudo docker-compose up --build -d
+sudo docker-compose down
+sudo docker system prune -af && sudo docker volume prune -f
+sudo docker-compose up --build -d
+sudo docker-compose down
+sudo docker system prune -af && sudo docker volume prune -f
+sudo docker-compose up --build -d
+sudo docker-compose down
+sudo docker system prune -af && sudo docker volume prune -f
+sudo docker-compose up --build -d
+sudo docker-compose down
+sudo docker system prune -af && sudo docker volume prune -f
+sudo docker-compose down
+sudo docker-compose up --build -d
+sudo reboot
+ping google.com
+cd frontend && npm install @mui/icons-material
+cd chatbot-project/frontend/
+npm install @mui/icons-material
+npm uninstall @react-oauth/google
+npm install @auth0/auth0-react
+curl -X POST https://yeditepemyo.digital/api/auth/initial-admin   -H "Content-Type: application/json"   -d '{
+    "email": "admin@yeditepe.edu.tr",
+    "password": "admin123",
+    "name": "Admin"
+  }'
+cd chatbot-project/docker && sudo docker-compose down && sudo docker-compose up --build -d
+sudo systemctl stop nginx && sudo docker-compose -f chatbot-project/docker/docker-compose.yml up -d
+cd /home/iskender.cevik/chatbot-project/docker && sudo systemctl stop nginx && sudo docker-compose up -d
+git remote add origin https://knowhyco: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@github.com/icevik/MYOChatbotProje.git && git push -u origin main
+git add . && git commit -m "Initial commit" && git push -u origin main
+git branch -M main && git push -u origin main
+git remote set-url origin https://knowhyco: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@github.com/icevik/MYOChatbotProje.git && git push -u origin main
+git push -f origin main
+rm -rf .git
+git init && git config --global user.name "knowhyco" && git config --global user.email "info@knowhy.co" && git add . && git commit -m "Initial commit" && git branch -M main && git remote add origin https://github.com/icevik/MYOChatbotProje.git && git push -u origin main
+git remote set-url origin https://knowhyco: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@github.com/icevik/MYOChatbotProje.git && git push -u origin main
+tar --exclude='node_modules' -czvf /home/iskender.cevik/chatbot-project.tar.gz -C /home/iskender.cevik chatbot-project
+tree -I "node_modules"
+cd chatbot-project/frontend/
+cd chatbot-project/backend/
+npm start
+cd ~/chatbot-project/docker && sudo docker-compose down && sudo docker-compose up --build -d
+cd ~/chatbot-project/frontend && npm install -D tailwindcss postcss autoprefixer && npx tailwindcss init -p
+cd ~/chatbot-project/frontend/public && wget https://www.yeditepe.edu.tr/sites/default/files/logo-tr.png -O yeditepe-logo.png
+cd ~/chatbot-project/docker && sudo docker-compose down && sudo docker-compose up --build -d
+cd ~/chatbot-project/frontend && rm -rf node_modules package-lock.json && npm install && npm run dev
+cd ~/chatbot-project/frontend && npm run build && npm run preview
+cd ~/chatbot-project/frontend && npm install terser && npm run build && npm run preview
+sudo docker system prune -af && sudo docker volume prune -f
+cd ~/chatbot-project/frontend && npm run dev
+cd ~/chatbot-project/backend && npm start

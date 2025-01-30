@@ -1,0 +1,6 @@
+PORT=3000
+MONGODB_URI=mongodb://localhost:27017/chatbot
+JWT_SECRET=your-secret-key-here
+GOOGLE_CLIENT_ID=776903006547-ucie9n7g0fsak7jgb0gg6h5cfbe2fvh8.apps.googleusercontent.com 
+GOOGLE_CLIENT_SECRET=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 
+GOOGLE_SECRET_ID=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 

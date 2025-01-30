@@ -1,0 +1,7 @@
+client secret: tAlZn9ZJwOc2bNk0bNxoTLfvukwpChTG5Ltt5bQbWFU3Inxq8akLfiegSS7BrWYk
+
+Client ID:i8DPk6WZSJx64AlLCKR7wK8FcXO8qS5F
+
+domain: dev-8h3oit57of6ajoru.us.auth0.com
+
+
