@@ -1,0 +1,35 @@
+2025-01-30 05:35:54.551 [info] Extension host with pid 1246 started
+2025-01-30 05:35:54.570 [info] Lock '/home/iskender.cevik/.cursor-server/data/User/workspaceStorage/cf49d59b8f2ec629d0ebe372a2a95ca2/vscode.lock': Lock acquired.
+2025-01-30 05:35:54.778 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: '*', root cause: vscode.git
+2025-01-30 05:35:54.972 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: '*'
+2025-01-30 05:35:54.972 [info] ExtensionService#_doActivateExtension vscode.github, startup: false, activationEvent: '*'
+2025-01-30 05:35:55.875 [info] Eager extensions activated
+2025-01-30 05:35:55.875 [info] ExtensionService#_doActivateExtension anysphere.cursor-retrieval, startup: false, activationEvent: 'onStartupFinished'
+2025-01-30 05:35:55.876 [info] ExtensionService#_doActivateExtension anysphere.cursor-shadow-workspace, startup: false, activationEvent: 'onStartupFinished'
+2025-01-30 05:35:55.876 [info] ExtensionService#_doActivateExtension anysphere.cursor-tokenize, startup: false, activationEvent: 'onStartupFinished'
+2025-01-30 05:35:55.877 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-01-30 05:35:55.877 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-01-30 05:36:14.697 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-01-30 05:36:15.031 [warning] [Decorations] CAPPING events from decorations provider vscode.git 9474
+2025-01-30 05:36:17.208 [warning] [Decorations] CAPPING events from decorations provider vscode.git 9474
+2025-01-30 05:36:37.311 [warning] [Decorations] CAPPING events from decorations provider vscode.git 9474
+2025-01-30 05:36:38.544 [error] Error: Failed to execute git
+	at t.Git._exec (/home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/extensions/git/dist/main.js:2:930078)
+	at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+	at async t.Git.exec (/home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/extensions/git/dist/main.js:2:929146)
+	at async W.exec (/home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/extensions/git/dist/main.js:2:934674)
+	at async W.handleCommitError (/home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/extensions/git/dist/main.js:2:944133)
+	at async W.commit (/home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/extensions/git/dist/main.js:2:943643)
+	at async /home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/extensions/git/dist/main.js:2:1048135
+	at async O.retryRun (/home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/extensions/git/dist/main.js:2:1063422)
+	at async O.run (/home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/extensions/git/dist/main.js:2:1063026)
+	at async O.commit (/home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/extensions/git/dist/main.js:2:1047817)
+	at async /home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/extensions/github/dist/extension.js:2:317832
+2025-01-30 05:36:41.030 [warning] [Decorations] CAPPING events from decorations provider vscode.git 9474
+2025-01-30 05:36:48.118 [warning] [Decorations] CAPPING events from decorations provider vscode.git 9474
+2025-01-30 05:36:51.066 [warning] [Decorations] CAPPING events from decorations provider vscode.git 9474
+2025-01-30 05:36:58.433 [warning] [Decorations] CAPPING events from decorations provider vscode.git 9474
+2025-01-30 05:37:08.607 [warning] [Decorations] CAPPING events from decorations provider vscode.git 9474
+2025-01-30 05:37:12.670 [warning] [Decorations] CAPPING events from decorations provider vscode.git 9475
+2025-01-30 05:41:05.895 [warning] [Decorations] CAPPING events from decorations provider vscode.git 9475
+2025-01-30 05:41:08.383 [warning] [Decorations] CAPPING events from decorations provider vscode.git 9475

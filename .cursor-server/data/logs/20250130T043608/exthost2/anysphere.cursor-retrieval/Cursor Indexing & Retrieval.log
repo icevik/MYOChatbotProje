@@ -1,0 +1,109 @@
+2025-01-30 05:08:53.386 [info] Creating Indexing Repo client:  https://repo42.cursor.sh
+2025-01-30 05:08:53.386 [info] Creating repo client with backend url: https://repo42.cursor.sh
+2025-01-30 05:08:53.386 [error] Git command failed: git config --get remote.origin.url Command failed: git config --get remote.origin.url
+
+2025-01-30 05:08:53.386 [error] Error getting repo info: Command failed: git config --get remote.origin.url
+
+2025-01-30 05:08:53.386 [error] Error: Command failed: git config --get remote.origin.url
+
+	at genericNodeError (node:internal/errors:984:15)
+	at wrappedFn (node:internal/errors:538:14)
+	at ChildProcess.exithandler (node:child_process:423:12)
+	at ChildProcess.emit (node:events:518:28)
+	at maybeClose (node:internal/child_process:1104:16)
+	at Socket.<anonymous> (node:internal/child_process:456:11)
+	at Socket.emit (node:events:518:28)
+	at Pipe.<anonymous> (node:net:343:12)
+2025-01-30 05:08:53.386 [info] InternalRepoInfo constructor with preferredEmbeddingModel 0
+2025-01-30 05:08:53.386 [error] We currently do not allow indexing the home directory.
+2025-01-30 05:08:53.386 [info] Creating merkle client.
+2025-01-30 05:08:53.386 [info] Done creating merkle client.
+2025-01-30 05:08:53.386 [info] Indexing job successfully done or aborted.
+2025-01-30 05:08:59.635 [info] Search by message took 58.00048400000014ms for query ""
+2025-01-30 05:08:59.653 [info] Search by sha took 38.0175190000009ms for query ""
+2025-01-30 05:09:04.773 [info] Search by message took 18.819118999999773ms for query ""
+2025-01-30 05:09:04.775 [info] Search by sha took 12.33827299999757ms for query ""
+2025-01-30 05:09:21.555 [info] Search by message took 13.81615900000179ms for query ""
+2025-01-30 05:09:21.556 [info] Search by sha took 9.195089000000735ms for query ""
+2025-01-30 05:09:27.764 [info] Search by message took 12.365939999996044ms for query ""
+2025-01-30 05:09:27.765 [info] Search by sha took 8.590089999997872ms for query ""
+2025-01-30 05:09:34.438 [info] Search by message took 13.649702999995498ms for query ""
+2025-01-30 05:09:34.440 [info] Search by sha took 9.166438000000198ms for query ""
+2025-01-30 05:09:40.389 [info] Search by message took 14.220092999996268ms for query ""
+2025-01-30 05:09:40.390 [info] Search by sha took 9.399349999999686ms for query ""
+2025-01-30 05:09:58.805 [info] Search by message took 12.70219100000395ms for query ""
+2025-01-30 05:09:58.807 [info] Search by sha took 8.23692999999912ms for query ""
+2025-01-30 05:13:21.443 [info] Search by message took 14.952066999976523ms for query ""
+2025-01-30 05:13:21.445 [info] Search by sha took 9.99376400001347ms for query ""
+2025-01-30 05:15:21.485 [info] Search by message took 13.348931000044104ms for query ""
+2025-01-30 05:15:21.487 [info] Search by sha took 10.042868999997154ms for query ""
+2025-01-30 05:15:25.917 [info] Search by message took 11.941906000021845ms for query ""
+2025-01-30 05:15:25.918 [info] Search by sha took 8.299223000009079ms for query ""
+2025-01-30 05:15:40.792 [info] Search by message took 13.618587000004482ms for query ""
+2025-01-30 05:15:40.793 [info] Search by sha took 8.767087999964133ms for query ""
+2025-01-30 05:15:59.213 [info] Search by message took 12.289756999991369ms for query ""
+2025-01-30 05:15:59.215 [info] Search by sha took 8.817890000005718ms for query ""
+2025-01-30 05:16:06.642 [info] Search by message took 12.143060999980662ms for query ""
+2025-01-30 05:16:06.644 [info] Search by sha took 8.588191000046209ms for query ""
+2025-01-30 05:18:21.441 [info] Search by message took 20.60620400006883ms for query ""
+2025-01-30 05:18:21.449 [info] Search by sha took 20.76690599997528ms for query ""
+2025-01-30 05:18:52.973 [info] multiCodebaseIndexingJob dispose
+2025-01-30 05:18:52.973 [info] Aborting indexing job.
+2025-01-30 05:18:52.973 [error] We currently do not allow indexing the home directory.
+2025-01-30 05:18:52.973 [info] Creating merkle client.
+2025-01-30 05:18:52.973 [info] Done creating merkle client.
+2025-01-30 05:18:52.973 [info] Indexing job successfully done or aborted.
+2025-01-30 05:22:42.878 [info] Search by message took 15.355208000051789ms for query ""
+2025-01-30 05:22:42.880 [info] Search by sha took 10.07267799996771ms for query ""
+2025-01-30 05:22:47.053 [info] Search by message took 14.041778999962844ms for query ""
+2025-01-30 05:22:47.055 [info] Search by sha took 9.360498000052758ms for query ""
+2025-01-30 05:23:01.439 [info] Search by message took 12.968308000010438ms for query ""
+2025-01-30 05:23:01.441 [info] Search by sha took 8.682462999946438ms for query ""
+2025-01-30 05:23:13.787 [info] Search by message took 13.831188000040129ms for query ""
+2025-01-30 05:23:13.788 [info] Search by sha took 9.251837999909185ms for query ""
+2025-01-30 05:23:21.483 [info] Search by message took 12.271157999988645ms for query ""
+2025-01-30 05:23:21.485 [info] Search by sha took 8.509443000075407ms for query ""
+2025-01-30 05:23:31.637 [info] Search by message took 12.927536999923177ms for query ""
+2025-01-30 05:23:31.638 [info] Search by sha took 9.071976999985054ms for query ""
+2025-01-30 05:23:45.535 [info] Search by message took 24.31602499994915ms for query ""
+2025-01-30 05:23:45.539 [info] Search by sha took 15.59831699996721ms for query ""
+2025-01-30 05:24:21.626 [info] Search by message took 13.094519999925978ms for query ""
+2025-01-30 05:24:21.627 [info] Search by sha took 8.730463000014424ms for query ""
+2025-01-30 05:24:34.572 [info] Search by message took 13.386885000043549ms for query ""
+2025-01-30 05:24:34.574 [info] Search by sha took 9.985830999910831ms for query ""
+2025-01-30 05:26:12.610 [info] Search by message took 11.591377999866381ms for query ""
+2025-01-30 05:26:12.611 [info] Search by sha took 8.138782999943942ms for query ""
+2025-01-30 05:26:34.002 [info] Search by message took 12.507207999937236ms for query ""
+2025-01-30 05:26:34.004 [info] Search by sha took 8.776534999953583ms for query ""
+2025-01-30 05:28:21.511 [info] Search by message took 12.190554000204429ms for query ""
+2025-01-30 05:28:21.512 [info] Search by sha took 8.696279000025243ms for query ""
+2025-01-30 05:28:21.929 [info] Search by message took 12.702939999988303ms for query ""
+2025-01-30 05:28:21.931 [info] Search by sha took 8.477312000002712ms for query ""
+2025-01-30 05:28:39.658 [info] Search by message took 14.843445000005886ms for query ""
+2025-01-30 05:28:39.659 [info] Search by sha took 10.185001000063494ms for query ""
+2025-01-30 05:28:52.978 [info] multiCodebaseIndexingJob dispose
+2025-01-30 05:28:52.978 [info] Aborting indexing job.
+2025-01-30 05:28:52.978 [error] We currently do not allow indexing the home directory.
+2025-01-30 05:28:52.978 [info] Creating merkle client.
+2025-01-30 05:28:52.978 [info] Done creating merkle client.
+2025-01-30 05:28:52.978 [info] Indexing job successfully done or aborted.
+2025-01-30 05:29:31.019 [info] Search by message took 17.038819999899715ms for query ""
+2025-01-30 05:29:31.024 [info] Search by sha took 14.509166999952868ms for query ""
+2025-01-30 05:29:46.828 [info] Search by message took 10.197119999909773ms for query ""
+2025-01-30 05:29:46.830 [info] Search by sha took 7.5979719997849315ms for query ""
+2025-01-30 05:30:41.124 [info] Search by message took 20.244389000115916ms for query ""
+2025-01-30 05:30:41.125 [info] Search by sha took 16.18751100008376ms for query ""
+2025-01-30 05:30:57.318 [info] Search by message took 28.69370900001377ms for query ""
+2025-01-30 05:30:57.332 [info] Search by sha took 34.865182999987155ms for query ""
+2025-01-30 05:30:57.464 [info] Search by sha took 86.27158599998802ms for query ""
+2025-01-30 05:30:57.464 [info] Search by message took 93.43702899990603ms for query ""
+2025-01-30 05:30:57.493 [info] Search by message took 73.04351399978623ms for query ""
+2025-01-30 05:30:57.493 [info] Search by sha took 86.57835699990392ms for query ""
+2025-01-30 05:30:57.493 [info] Search by message took 107.21157300006598ms for query ""
+2025-01-30 05:30:57.505 [info] Search by sha took 66.22002399992198ms for query ""
+2025-01-30 05:30:59.660 [info] Search by message took 26.047777000116184ms for query ""
+2025-01-30 05:30:59.664 [info] Search by sha took 16.05058700009249ms for query ""
+2025-01-30 05:31:01.613 [info] Search by message took 18.225804999936372ms for query ""
+2025-01-30 05:31:01.620 [info] Search by sha took 17.789441999979317ms for query ""
+2025-01-30 05:31:17.251 [info] Search by message took 12.229372000088915ms for query ""
+2025-01-30 05:31:17.252 [info] Search by sha took 7.969427999807522ms for query ""

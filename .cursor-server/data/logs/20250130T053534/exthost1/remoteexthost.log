@@ -1,0 +1,13 @@
+2025-01-30 05:35:38.847 [info] Extension host with pid 1107 started
+2025-01-30 05:35:39.600 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-01-30 05:35:40.326 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-01-30 05:35:40.628 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-01-30 05:35:40.628 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-01-30 05:35:41.352 [info] Eager extensions activated
+2025-01-30 05:35:41.353 [info] ExtensionService#_doActivateExtension anysphere.cursor-retrieval, startup: false, activationEvent: 'onStartupFinished'
+2025-01-30 05:35:41.353 [info] ExtensionService#_doActivateExtension anysphere.cursor-shadow-workspace, startup: false, activationEvent: 'onStartupFinished'
+2025-01-30 05:35:41.353 [info] ExtensionService#_doActivateExtension anysphere.cursor-tokenize, startup: false, activationEvent: 'onStartupFinished'
+2025-01-30 05:35:41.354 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-01-30 05:35:41.355 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-01-30 05:35:44.586 [info] Extension host terminating: received terminate message from renderer
+2025-01-30 05:35:44.605 [info] Extension host with pid 1107 exiting with code 0

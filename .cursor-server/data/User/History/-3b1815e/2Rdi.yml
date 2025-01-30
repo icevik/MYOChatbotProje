@@ -1,0 +1,72 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: chatbot-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/ssl:/etc/nginx/ssl
+      - ../frontend/dist:/usr/share/nginx/html
+    depends_on:
+      - frontend
+      - backend
+    restart: always
+
+  mongodb:
+    image: mongo:latest
+    container_name: chatbot-mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=example
+    restart: always
+
+  backend:
+    build:
+      context: ../backend
+      dockerfile: Dockerfile
+    container_name: chatbot-backend
+    expose:
+      - "3000"
+    depends_on:
+      - mongodb
+    environment:
+      - MONGODB_URI=mongodb://root:example@mongodb:27017/chatbot?authSource=admin
+      - PORT=3000
+      - JWT_SECRET=your-secret-key-here
+      - GOOGLE_CLIENT_ID=776903006547-ucie9n7g0fsak7jgb0gg6h5cfbe2fvh8.apps.googleusercontent.com
+      - GOOGLE_CLIENT_SECRET=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
+      - NODE_ENV=production
+    volumes:
+      - ../backend:/app
+      - /app/node_modules
+    restart: always
+
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+    container_name: chatbot-frontend
+    expose:
+      - "5173"
+    environment:
+      - VITE_GOOGLE_CLIENT_ID=776903006547-ucie9n7g0fsak7jgb0gg6h5cfbe2fvh8.apps.googleusercontent.com
+      - VITE_API_URL=https://api.yeditepemyo.digital/api
+      - VITE_APP_URL=https://yeditepemyo.digital
+      - NODE_ENV=production
+    volumes:
+      - ../frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+    restart: always
+
+volumes:
+  mongodb_data: 

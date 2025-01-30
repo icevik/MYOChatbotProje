@@ -1,0 +1,4 @@
+Listening on 127.0.0.1:34153
+[2025-01-30 05:35:51] info Disposed of connection to running server.
+[2025-01-30 05:35:51] info Checking /home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/log.txt and /home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/pid.txt for a running server...
+[2025-01-30 05:35:51] info Found running server (pid=1079)

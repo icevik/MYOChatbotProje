@@ -1,0 +1,54 @@
+2025-01-30 04:36:30.072 [info] Creating Indexing Repo client:  https://repo42.cursor.sh
+2025-01-30 04:36:30.072 [info] Creating repo client with backend url: https://repo42.cursor.sh
+2025-01-30 04:36:30.073 [error] Git command failed: git config --get remote.origin.url Command failed: git config --get remote.origin.url
+
+2025-01-30 04:36:30.073 [error] Error getting repo info: Command failed: git config --get remote.origin.url
+
+2025-01-30 04:36:30.073 [error] Error: Command failed: git config --get remote.origin.url
+
+	at genericNodeError (node:internal/errors:984:15)
+	at wrappedFn (node:internal/errors:538:14)
+	at ChildProcess.exithandler (node:child_process:423:12)
+	at ChildProcess.emit (node:events:518:28)
+	at maybeClose (node:internal/child_process:1104:16)
+	at Socket.<anonymous> (node:internal/child_process:456:11)
+	at Socket.emit (node:events:518:28)
+	at Pipe.<anonymous> (node:net:343:12)
+2025-01-30 04:36:30.073 [info] InternalRepoInfo constructor with preferredEmbeddingModel 0
+2025-01-30 04:36:30.073 [error] We currently do not allow indexing the home directory.
+2025-01-30 04:36:30.073 [info] Creating merkle client.
+2025-01-30 04:36:30.073 [info] Done creating merkle client.
+2025-01-30 04:36:30.073 [info] Indexing job successfully done or aborted.
+2025-01-30 04:40:57.352 [info] Search by message took 13.317394000012428ms for query ""
+2025-01-30 04:40:57.354 [info] Search by sha took 8.127560000051744ms for query ""
+2025-01-30 04:45:57.336 [info] Search by message took 12.009242999949493ms for query ""
+2025-01-30 04:45:57.338 [info] Search by sha took 8.013414000044577ms for query ""
+2025-01-30 04:46:29.012 [info] multiCodebaseIndexingJob dispose
+2025-01-30 04:46:29.012 [info] Aborting indexing job.
+2025-01-30 04:46:29.012 [error] We currently do not allow indexing the home directory.
+2025-01-30 04:46:29.012 [info] Creating merkle client.
+2025-01-30 04:46:29.012 [info] Done creating merkle client.
+2025-01-30 04:46:29.012 [info] Indexing job successfully done or aborted.
+2025-01-30 04:46:42.979 [info] Search by message took 9.722612000070512ms for query ""
+2025-01-30 04:46:42.980 [info] Search by sha took 7.173757000011392ms for query ""
+2025-01-30 04:50:57.459 [info] Search by message took 11.223855000105686ms for query ""
+2025-01-30 04:50:57.462 [info] Search by sha took 18.517616000026464ms for query ""
+2025-01-30 04:50:57.462 [info] Search by message took 23.978705000015907ms for query ""
+2025-01-30 04:50:57.463 [info] Search by sha took 10.629100000020117ms for query ""
+2025-01-30 04:55:57.429 [info] Search by message took 12.555592000018805ms for query ""
+2025-01-30 04:55:57.429 [info] Search by sha took 17.66262500011362ms for query ""
+2025-01-30 04:55:57.430 [info] Search by message took 25.445670999819413ms for query ""
+2025-01-30 04:55:57.431 [info] Search by sha took 8.197575000114739ms for query ""
+2025-01-30 04:56:29.012 [info] multiCodebaseIndexingJob dispose
+2025-01-30 04:56:29.012 [info] Aborting indexing job.
+2025-01-30 04:56:29.012 [error] We currently do not allow indexing the home directory.
+2025-01-30 04:56:29.012 [info] Creating merkle client.
+2025-01-30 04:56:29.012 [info] Done creating merkle client.
+2025-01-30 04:56:29.012 [info] Indexing job successfully done or aborted.
+2025-01-30 05:00:57.411 [info] Search by message took 9.459480000194162ms for query ""
+2025-01-30 05:00:57.411 [info] Search by sha took 13.688563999952748ms for query ""
+2025-01-30 05:00:57.411 [info] Search by message took 18.962383000180125ms for query ""
+2025-01-30 05:00:57.412 [info] Search by sha took 6.569365000119433ms for query ""
+2025-01-30 05:13:37.436 [info] multiCodebaseIndexingJob dispose
+2025-01-30 05:13:37.436 [info] Aborting indexing job.
+2025-01-30 05:13:37.438 [error] Unhandled error in doUpdate Canceled

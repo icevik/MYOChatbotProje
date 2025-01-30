@@ -1,0 +1,21 @@
+2025-01-30 04:36:13.255 [info] Extension host with pid 116713 started
+2025-01-30 04:36:13.265 [info] Lock '/home/iskender.cevik/.cursor-server/data/User/workspaceStorage/72307a7cf0f17828c6adbfe324e31764/vscode.lock': Lock acquired.
+2025-01-30 04:36:14.851 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-01-30 04:36:14.853 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: 'onCommand:git.api.getRepositories', root cause: vscode.git
+2025-01-30 04:36:14.854 [info] ExtensionService#_doActivateExtension vscode.tunnel-forwarding, startup: false, activationEvent: 'onTunnel'
+2025-01-30 04:36:14.865 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2025-01-30 04:36:14.865 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2025-01-30 04:36:14.866 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:typescript'
+2025-01-30 04:36:14.867 [info] ExtensionService#_doActivateExtension ms-azuretools.vscode-docker, startup: false, activationEvent: 'onLanguage:dockercompose'
+2025-01-30 04:36:17.350 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'onCommand:git.api.getRepositories'
+2025-01-30 04:36:17.351 [info] ExtensionService#_doActivateExtension vscode.github, startup: false, activationEvent: '*'
+2025-01-30 04:36:21.095 [info] Eager extensions activated
+2025-01-30 04:36:21.115 [info] ExtensionService#_doActivateExtension anysphere.cursor-retrieval, startup: false, activationEvent: 'onStartupFinished'
+2025-01-30 04:36:21.116 [info] ExtensionService#_doActivateExtension anysphere.cursor-shadow-workspace, startup: false, activationEvent: 'onStartupFinished'
+2025-01-30 04:36:21.116 [info] ExtensionService#_doActivateExtension anysphere.cursor-tokenize, startup: false, activationEvent: 'onStartupFinished'
+2025-01-30 04:36:21.117 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-01-30 04:36:21.117 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-01-30 04:39:42.248 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+2025-01-30 05:13:37.327 [info] Extension host terminating: renderer disconnected for too long (2)
+2025-01-30 05:13:37.358 [info] Lock '/home/iskender.cevik/.cursor-server/data/User/workspaceStorage/72307a7cf0f17828c6adbfe324e31764/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2025-01-30 05:13:37.472 [info] Extension host with pid 116713 exiting with code 0

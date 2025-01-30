@@ -1,0 +1,3 @@
+VITE_GOOGLE_CLIENT_ID=776903006547-av49fuqt4ipcqb0i0sntgfbamfuimd63.apps.googleusercontent.com
+VITE_API_URL=http://35.184.81.65:3000/api
+VITE_APP_URL=http://35.184.81.65:5173 

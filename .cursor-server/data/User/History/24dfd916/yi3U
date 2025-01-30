@@ -1,0 +1,5 @@
+PORT=3000
+MONGODB_URI=mongodb://localhost:27017/chatbot
+JWT_SECRET=yeditepemyo-chatbot-secret-2024
+GOOGLE_CLIENT_ID=776903006547-av49fuqt4ipcqb0i0sntgfbamfuimd63.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=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 

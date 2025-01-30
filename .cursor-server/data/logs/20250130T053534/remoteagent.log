@@ -1,0 +1,77 @@
+2025-01-30 05:35:34.982 [info] 
+
+
+
+
+2025-01-30 05:35:34.995 [info] Extension host agent started.
+2025-01-30 05:35:35.334 [info] [<unknown>][f435ab2a][ExtensionHostConnection] New connection established.
+2025-01-30 05:35:35.335 [info] [<unknown>][c7dccd01][ManagementConnection] New connection established.
+2025-01-30 05:35:35.424 [info] [<unknown>][f435ab2a][ExtensionHostConnection] <1107> Launched Extension Host Process.
+2025-01-30 05:35:41.348 [error] CodeExpectedError: Could not find pty 1 on pty host
+    at A.W (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:48:12235)
+    at A.resize (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:48:8775)
+    at N.s.<computed> (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:48:2962)
+    at Object.call (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:31:4203)
+    at Kc.s (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:29:79281)
+    at Kc.q (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:29:78804)
+    at us.value (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:29:78206)
+    at w.B (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:29:746)
+    at w.fire (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:29:964)
+    at process.y (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:24:29139)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-01-30 05:35:41.351 [error] CodeExpectedError: Could not find pty 2 on pty host
+    at A.W (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:48:12235)
+    at A.resize (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:48:8775)
+    at N.s.<computed> (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:48:2962)
+    at Object.call (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:31:4203)
+    at Kc.s (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:29:79281)
+    at Kc.q (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:29:78804)
+    at us.value (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:29:78206)
+    at w.B (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:29:746)
+    at w.fire (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:29:964)
+    at process.y (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:24:29139)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-01-30 05:35:41.658 [error] CodeExpectedError: Could not find pty 3 on pty host
+    at A.W (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:48:12235)
+    at A.resize (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:48:8775)
+    at N.s.<computed> (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:48:2962)
+    at Object.call (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:31:4203)
+    at Kc.s (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:29:79281)
+    at Kc.q (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:29:78804)
+    at us.value (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:29:78206)
+    at w.B (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:29:746)
+    at w.fire (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:29:964)
+    at process.y (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:24:29139)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-01-30 05:35:41.659 [error] CodeExpectedError: Could not find pty 4 on pty host
+    at A.W (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:48:12235)
+    at A.resize (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:48:8775)
+    at N.s.<computed> (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:48:2962)
+    at Object.call (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:31:4203)
+    at Kc.s (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:29:79281)
+    at Kc.q (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:29:78804)
+    at us.value (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:29:78206)
+    at w.B (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:29:746)
+    at w.fire (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:29:964)
+    at process.y (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/vs/platform/terminal/node/ptyHostMain.js:24:29139)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-01-30 05:35:44.584 [info] [<unknown>][c7dccd01][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-01-30 05:35:44.623 [info] [<unknown>][f435ab2a][ExtensionHostConnection] <1107> Extension Host Process exited with code: 0, signal: null.
+2025-01-30 05:35:44.623 [info] Cancelling previous shutdown timeout
+2025-01-30 05:35:44.624 [info] Last EH closed, waiting before shutting down
+2025-01-30 05:35:52.070 [info] [<unknown>][23889365][ManagementConnection] New connection established.
+2025-01-30 05:35:52.071 [info] [<unknown>][21b98bf8][ExtensionHostConnection] New connection established.
+2025-01-30 05:35:52.075 [info] [<unknown>][21b98bf8][ExtensionHostConnection] <1246> Launched Extension Host Process.
+2025-01-30 05:40:44.625 [info] New EH opened, aborting shutdown
+2025-01-30 05:40:44.627 [error] Error: Unexpected SIGPIPE
+    at process.<anonymous> (file:///home/iskender.cevik/.cursor-server/cli/servers/Stable-d9f8a232158c173cb84b31a70a49a9689bf0f770/server/out/server-main.js:176:1060)
+    at process.emit (node:events:530:35)
+2025-01-30 05:40:53.133 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted

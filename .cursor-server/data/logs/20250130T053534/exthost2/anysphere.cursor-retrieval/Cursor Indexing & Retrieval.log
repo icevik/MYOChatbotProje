@@ -1,0 +1,41 @@
+2025-01-30 05:35:57.583 [info] Creating Indexing Repo client:  https://repo42.cursor.sh
+2025-01-30 05:35:57.583 [info] Creating repo client with backend url: https://repo42.cursor.sh
+2025-01-30 05:35:57.583 [error] Git command failed: git config --get remote.origin.url Command failed: git config --get remote.origin.url
+
+2025-01-30 05:35:57.583 [error] Error getting repo info: Command failed: git config --get remote.origin.url
+
+2025-01-30 05:35:57.583 [error] Error: Command failed: git config --get remote.origin.url
+
+	at genericNodeError (node:internal/errors:984:15)
+	at wrappedFn (node:internal/errors:538:14)
+	at ChildProcess.exithandler (node:child_process:423:12)
+	at ChildProcess.emit (node:events:518:28)
+	at maybeClose (node:internal/child_process:1104:16)
+	at Socket.<anonymous> (node:internal/child_process:456:11)
+	at Socket.emit (node:events:518:28)
+	at Pipe.<anonymous> (node:net:343:12)
+2025-01-30 05:35:57.631 [info] InternalRepoInfo constructor with preferredEmbeddingModel 0
+2025-01-30 05:35:57.803 [error] We currently do not allow indexing the home directory.
+2025-01-30 05:35:57.803 [info] Creating merkle client.
+2025-01-30 05:35:57.803 [info] Done creating merkle client.
+2025-01-30 05:35:57.803 [info] Indexing job successfully done or aborted.
+2025-01-30 05:38:19.680 [info] Search by sha took 11.141451000003144ms for query ""
+2025-01-30 05:38:19.688 [info] Search by message took 27.78135000000475ms for query ""
+2025-01-30 05:40:11.551 [info] Search by message took 10.287323000025935ms for query ""
+2025-01-30 05:40:11.553 [info] Search by sha took 6.829863999999361ms for query ""
+2025-01-30 05:40:24.007 [info] Search by message took 19.202112000028137ms for query ""
+2025-01-30 05:40:24.010 [info] Search by sha took 15.095606999995653ms for query ""
+2025-01-30 05:40:34.684 [info] Search by message took 8.300447000015993ms for query ""
+2025-01-30 05:40:34.686 [info] Search by sha took 6.908565999998245ms for query ""
+2025-01-30 05:40:35.410 [info] Search by message took 7.947137999988627ms for query ""
+2025-01-30 05:40:35.412 [info] Search by sha took 6.6114159999997355ms for query ""
+2025-01-30 05:40:35.947 [info] Search by message took 8.449174999957904ms for query ""
+2025-01-30 05:40:35.948 [info] Search by sha took 6.6889650000375696ms for query ""
+2025-01-30 05:40:46.662 [info] Search by message took 8.628867999999784ms for query ""
+2025-01-30 05:40:46.662 [info] Search by sha took 12.874552999972366ms for query ""
+2025-01-30 05:40:46.662 [info] Search by message took 16.242442000017036ms for query ""
+2025-01-30 05:40:46.664 [info] Search by sha took 6.599993999989238ms for query ""
+2025-01-30 05:40:48.737 [info] Search by message took 8.423268999962602ms for query ""
+2025-01-30 05:40:48.739 [info] Search by sha took 6.570109000022057ms for query ""
+2025-01-30 05:41:02.832 [info] Search by message took 8.713568999955896ms for query ""
+2025-01-30 05:41:02.833 [info] Search by sha took 6.4959169999929145ms for query ""

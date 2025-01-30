@@ -1,0 +1,82 @@
+2025-01-30 05:08:53.387 [info] Using repo backend url https://repo42.cursor.sh
+2025-01-30 05:08:53.387 [info] Git graph is disabled. shouldIndex: true isEnabled: false
+2025-01-30 05:08:53.632 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:08:53.635 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:08:53.723 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:08:53.724 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:08:53.724 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:08:53.724 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:08:53.725 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\backend\.env
+2025-01-30 05:08:53.725 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\backend\.env
+2025-01-30 05:08:53.725 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:08:53.726 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:08:53.726 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:08:53.726 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:08:53.727 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:08:53.727 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:08:53.727 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\backend\.env
+2025-01-30 05:08:53.727 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:08:53.727 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:08:53.807 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:08:53.807 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:08:53.807 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:08:53.807 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:08:54.074 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:08:54.075 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:08:54.075 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:08:54.075 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:08:59.075 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:08:59.075 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:08:59.075 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:08:59.075 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:08:59.654 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:08:59.655 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:08:59.655 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:08:59.655 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:13:09.990 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\.env
+2025-01-30 05:13:12.859 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\backend\.env
+2025-01-30 05:13:12.859 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\backend\.env
+2025-01-30 05:13:20.359 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\.env
+2025-01-30 05:13:20.359 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\.env
+2025-01-30 05:13:25.825 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\docker\docker-compose.yml
+2025-01-30 05:15:21.096 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:15:21.097 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:15:21.578 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:15:21.578 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:15:21.578 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:15:21.578 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:15:30.623 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\backend\.env
+2025-01-30 05:15:30.623 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\backend\.env
+2025-01-30 05:22:38.877 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:22:38.877 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:22:42.109 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:22:42.109 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:22:42.109 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:22:42.110 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:22:42.521 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:22:42.521 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:22:42.521 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:22:42.522 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:22:42.971 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:22:42.971 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:22:42.971 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:22:42.971 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:23:53.280 [error] Failed to check if git graph is enabled [internal] Stream closed with error code NGHTTP2_INTERNAL_ERROR
+2025-01-30 05:30:41.187 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:30:41.188 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:30:57.259 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:30:57.259 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:30:57.259 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:30:57.259 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:30:57.316 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:30:57.316 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:30:57.317 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:30:57.317 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:30:57.520 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:30:57.520 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:30:57.520 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:30:57.520 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:31:17.319 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:31:17.319 [error] Failed to get cached related files... falling back to uncached No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
+2025-01-30 05:31:17.319 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\doküman.txt
+2025-01-30 05:31:17.319 [error] Failed to get related files No indexer found for file. Maybe not inside a git repo? \home\iskender.cevik\chatbot-project\frontend\google-cloud-setup.md
